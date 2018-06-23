@@ -33,4 +33,11 @@ public class GameFieldTests {
         }
         Assert.assertTrue(isCellDefaultElement);
     }
+
+    @Test
+    public void testMethodIsMovingSafeForOutOfBoundsIndices() {
+        boolean notSafeMove = gameField.isMovingSafeAt(0, 15);
+
+        Assert.assertFalse(notSafeMove);
+    }
 }

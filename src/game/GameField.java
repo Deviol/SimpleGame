@@ -24,6 +24,15 @@ public class GameField {
         field[MAX_LENGTH_OF_FIELD * row + col].setStatus(status);
     }
 
+    public boolean isMovingSafeAt(int row, int col) {
+        boolean isColumnIndexInBounds = col > -1
+                && col < GameField.MAX_LENGTH_OF_FIELD;
+        boolean isRowIndexInBounds = row > -1
+                && row < GameField.MAX_LENGTH_OF_FIELD;
+
+        return isColumnIndexInBounds && isRowIndexInBounds;
+    }
+
     private void initializeField() {
         field = new FieldElement[MAX_LENGTH_OF_FIELD * MAX_LENGTH_OF_FIELD];
         for (int i = 0; i < MAX_LENGTH_OF_FIELD; i++) {
