@@ -14,6 +14,27 @@ public class DefaultLevel {
         heroPosition = new HeroPosition();
     }
 
+    private boolean isMovingSafeAtDirection(HeroDirection direction) {
+        switch (direction) {
+            case LEFT: {
+                int newCol = heroPosition.getColumnIndex() - 1;
+                return gameField.isMovingSafeAt(heroPosition.getRowIndex(), newCol);
+            }
+            case RIGHT: {
+                int newCol = heroPosition.getColumnIndex() + 1;
+                return gameField.isMovingSafeAt(heroPosition.getRowIndex(), newCol);
+            }
+            case UP: {
+                int newRow = heroPosition.getRowIndex() - 1;
+                return gameField.isMovingSafeAt(newRow, heroPosition.getColumnIndex());
+            }
+            default: {
+                int newRow = heroPosition.getRowIndex() + 1;
+                return gameField.isMovingSafeAt(newRow, heroPosition.getColumnIndex());
+            }
+        }
+    }
+    
     private void makeOldStepUsed() {
         int heroRow = heroPosition.getRowIndex();
         int heroCol = heroPosition.getColumnIndex();
