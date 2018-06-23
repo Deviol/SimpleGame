@@ -57,7 +57,7 @@ public class DefaultLevel {
             throw new HeroStepOutOfGameFieldBoundsException();
         }
     }
-    
+
     private boolean isMovingSafeAtDirection(HeroDirection direction) {
         switch (direction) {
             case LEFT: {

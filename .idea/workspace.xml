@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/GameField.java" afterPath="$PROJECT_DIR$/src/game/GameField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/GameFieldTests.java" afterPath="$PROJECT_DIR$/src/tests/GameFieldTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/DefaultLevel.java" afterPath="$PROJECT_DIR$/src/game/DefaultLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" afterPath="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +55,7 @@
       <file leaf-file-name="GameField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="648">
               <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="e#152#153#0" expanded="true" />
@@ -67,10 +67,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameFieldTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultLevelTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tests/DefaultLevelTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-20">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeroStepOutOfGameFieldBoundsException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameFieldTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/GameFieldTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state relative-caret-position="722">
               <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -100,26 +132,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForbiddenDirectionException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/ForbiddenDirectionException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeroStepOutOfGameFieldBoundsException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HeroPosition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/HeroPosition.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,16 +151,6 @@
                 <element signature="e#712#713#0" expanded="true" />
                 <element signature="e#746#747#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeroDirection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/HeroDirection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/game/FieldElement.java" />
         <option value="$PROJECT_DIR$/src/game/FieldElementStatus.java" />
         <option value="$PROJECT_DIR$/src/game/ForbiddenDirectionException.java" />
-        <option value="$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java" />
         <option value="$PROJECT_DIR$/src/game/HeroPosition.java" />
         <option value="$PROJECT_DIR$/src/game/HeroDirection.java" />
         <option value="$PROJECT_DIR$/src/tests/HeroTests.java" />
@@ -187,6 +188,9 @@
         <option value="$PROJECT_DIR$/src/game/NoSpellFoundException.java" />
         <option value="$PROJECT_DIR$/src/game/GameField.java" />
         <option value="$PROJECT_DIR$/src/tests/GameFieldTests.java" />
+        <option value="$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java" />
+        <option value="$PROJECT_DIR$/src/game/DefaultLevel.java" />
+        <option value="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" />
       </list>
     </option>
   </component>
@@ -270,59 +274,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.GameFieldTests.testMethodIsMovingSafeForOutOfBoundsIndices">
-    <configuration default="false" name="HeroTests.testUpdateHeroPositionCaseLEFTShouldDecrementColumnIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SimpleGame" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HeroTests" />
-      <option name="METHOD_NAME" value="testUpdateHeroPositionCaseLEFTShouldDecrementColumnIndex" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="HeroTests.testUpdateHeroPositionDefaultCaseShouldIncrementColumnIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SimpleGame" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HeroTests" />
-      <option name="METHOD_NAME" value="testUpdateHeroPositionDefaultCaseShouldIncrementColumnIndex" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.DefaultLevelTests.testMovingLeftShouldMakeLegalStep">
     <configuration default="false" name="GameFieldTests.testConstructorShouldCreateDefaultField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -388,6 +340,58 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.GameFieldTests" />
       <option name="METHOD_NAME" value="testMethodIsMovingSafeForOutOfBoundsIndices" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DefaultLevelTests.testMovingLeftShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SimpleGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.DefaultLevelTests" />
+      <option name="METHOD_NAME" value="testMovingLeftShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DefaultLevelTests.testMovingLeftShouldMakeLegalStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SimpleGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.DefaultLevelTests" />
+      <option name="METHOD_NAME" value="testMovingLeftShouldMakeLegalStep" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -606,19 +610,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.HeroTests.testUpdateHeroPositionCaseLEFTShouldDecrementColumnIndex" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HeroTests.testUpdateHeroPositionDefaultCaseShouldIncrementColumnIndex" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testConstructorShouldCreateDefaultField" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testMethodIsMovingSafeShouldCheckAreIndicesInBounds" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testMethodIsMovingSafeForOutOfBoundsIndices" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testConstructorShouldCreateDefaultField" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testMethodIsMovingSafeShouldCheckAreIndicesInBounds" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testMethodIsMovingSafeForOutOfBoundsIndices" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingLeftShouldThrowException" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingLeftShouldMakeLegalStep" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testMethodIsMovingSafeForOutOfBoundsIndices" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testMethodIsMovingSafeShouldCheckAreIndicesInBounds" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testConstructorShouldCreateDefaultField" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HeroTests.testUpdateHeroPositionDefaultCaseShouldIncrementColumnIndex" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HeroTests.testUpdateHeroPositionCaseLEFTShouldDecrementColumnIndex" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingLeftShouldMakeLegalStep" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingLeftShouldThrowException" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testMethodIsMovingSafeForOutOfBoundsIndices" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testMethodIsMovingSafeShouldCheckAreIndicesInBounds" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.GameFieldTests.testConstructorShouldCreateDefaultField" />
       </list>
     </recent_temporary>
   </component>
@@ -636,8 +640,26 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameFieldTests_testConstructorShouldCreateDefaultField - 2018.06.23 at 19h 18m 10s.xml">
-      <configuration name="GameFieldTests.testConstructorShouldCreateDefaultField" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testMovingLeftShouldMakeLegalStep - 2018.06.23 at 21h 29m 14s.xml">
+      <configuration name="DefaultLevelTests.testMovingLeftShouldMakeLegalStep" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultLevelTests_testMovingLeftShouldMakeLegalStep - 2018.06.23 at 21h 29m 26s.xml">
+      <configuration name="DefaultLevelTests.testMovingLeftShouldMakeLegalStep" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultLevelTests_testMovingLeftShouldMakeLegalStep - 2018.06.23 at 21h 29m 44s.xml">
+      <configuration name="DefaultLevelTests.testMovingLeftShouldMakeLegalStep" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultLevelTests_testMovingLeftShouldThrowException - 2018.06.23 at 21h 16m 41s.xml">
+      <configuration name="DefaultLevelTests.testMovingLeftShouldThrowException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultLevelTests_testMovingLeftShouldThrowException - 2018.06.23 at 21h 17m 01s.xml">
+      <configuration name="DefaultLevelTests.testMovingLeftShouldThrowException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultLevelTests_testMovingLeftShouldThrowException - 2018.06.23 at 21h 17m 12s.xml">
+      <configuration name="DefaultLevelTests.testMovingLeftShouldThrowException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultLevelTests_testMovingLeftShouldThrowException - 2018.06.23 at 21h 17m 23s.xml">
+      <configuration name="DefaultLevelTests.testMovingLeftShouldThrowException" configurationId="JUnit" />
     </history-entry>
     <history-entry file="GameFieldTests_testConstructorShouldCreateDefaultField - 2018.06.23 at 19h 18m 28s.xml">
       <configuration name="GameFieldTests.testConstructorShouldCreateDefaultField" configurationId="JUnit" />
@@ -647,24 +669,6 @@
     </history-entry>
     <history-entry file="GameFieldTests_testMethodIsMovingSafeShouldCheckAreIndicesInBounds - 2018.06.23 at 19h 29m 22s.xml">
       <configuration name="GameFieldTests.testMethodIsMovingSafeShouldCheckAreIndicesInBounds" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeroTests_testDecreaseHealthWithCaseSumLessThanZeroShouldAssignZero - 2018.06.23 at 17h 56m 32s.xml">
-      <configuration name="HeroTests.testDecreaseHealthWithCaseSumLessThanZeroShouldAssignZero" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeroTests_testIncreaseHealthWithCaseSumOverTheLimitShouldAssignMaxHealth - 2018.06.23 at 17h 56m 07s.xml">
-      <configuration name="HeroTests.testIncreaseHealthWithCaseSumOverTheLimitShouldAssignMaxHealth" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeroTests_testMethodIncreaseHealthWithCaseOverTheLimit - 2018.06.23 at 17h 50m 30s.xml">
-      <configuration name="HeroTests.testMethodIncreaseHealthWithCaseOverTheLimit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeroTests_testMethodIncreaseHealthWithCaseOverTheLimit - 2018.06.23 at 17h 50m 46s.xml">
-      <configuration name="HeroTests.testMethodIncreaseHealthWithCaseOverTheLimit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeroTests_testUpdateHeroPositionCaseLEFTShouldDecrementColumnIndex - 2018.06.23 at 18h 28m 46s.xml">
-      <configuration name="HeroTests.testUpdateHeroPositionCaseLEFTShouldDecrementColumnIndex" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeroTests_testUpdateHeroPositionDefaultCaseShouldIncrementColumnIndex - 2018.06.23 at 18h 31m 53s.xml">
-      <configuration name="HeroTests.testUpdateHeroPositionDefaultCaseShouldIncrementColumnIndex" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -680,13 +684,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2441349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -735,14 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -819,9 +815,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="648">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#152#153#0" expanded="true" />
@@ -834,12 +838,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/GameFieldTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
+        <state relative-caret-position="722">
           <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#260#261#0" expanded="true" />
             <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/DefaultLevelTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
