@@ -32,4 +32,8 @@ public class Hero {
             this.health = 0;
         }
     }
+
+    public int getHealth() {
+        return health;
+    }
 }
