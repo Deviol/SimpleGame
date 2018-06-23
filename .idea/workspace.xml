@@ -42,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FieldElement.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FieldElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/FieldElement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="580">
@@ -57,6 +57,26 @@
                 <element signature="e#592#593#0" expanded="true" />
                 <element signature="e#619#620#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForbiddenDirectionException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/ForbiddenDirectionException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeroStepOutOfGameFieldBoundsException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,8 +96,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,6 +117,8 @@
         <option value="$PROJECT_DIR$/src/tests/HeroTests.java" />
         <option value="$PROJECT_DIR$/src/game/FieldElement.java" />
         <option value="$PROJECT_DIR$/src/game/FieldElementStatus.java" />
+        <option value="$PROJECT_DIR$/src/game/ForbiddenDirectionException.java" />
+        <option value="$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java" />
       </list>
     </option>
   </component>
@@ -596,6 +618,22 @@
             <element signature="e#592#593#0" expanded="true" />
             <element signature="e#619#620#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/ForbiddenDirectionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
