@@ -1,3 +1,5 @@
+package game;
+
 public class Hero {
     private int health;
     private int maxHealth;
