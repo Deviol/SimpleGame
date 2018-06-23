@@ -63,7 +63,7 @@ public class DefaultLevel {
         int heroCol = heroPosition.getColumnIndex();
         String spellCode = gameField.getFieldElementCodeAt(heroRow, heroCol);
         String[] spellParts = spellCode.split(":");
-        if(spellParts[1].equals("spell")) {
+        if(spellParts.length == 3 && spellParts[1].equals("spell")) {
             Spell currentSpell = SpellFactory.getAppropriateSpell(spellParts[2], gameField, hero);
             currentSpell.activateSpecialEffectOnField();
             currentSpell.activateSpecialEffectOnHero(5); //fix
@@ -75,7 +75,7 @@ public class DefaultLevel {
     }
 
     public void generateLevel() {
-        generateElementAt(2, 3, "spell:InfernoBlast");
+        generateElementAt(2, 3, "spell:InfernoSpell");
         generateElementAt(4, 9, "exit");
         generateElementAt(14, 5, "death");
         generateElementAt(13, 13, "exit");
@@ -89,7 +89,7 @@ public class DefaultLevel {
             gameField.setNewFieldElementCode(row, col, newCode);
         }
     }
-    
+
     private boolean isMovingSafeAtDirection(HeroDirection direction) {
         switch (direction) {
             case LEFT: {

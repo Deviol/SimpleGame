@@ -22,7 +22,7 @@
       <file leaf-file-name="GameField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="468">
               <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="e#152#153#0" expanded="true" />
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultLevelTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultLevelTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tests/DefaultLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="628">
+              <caret line="114" column="9" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+            <state relative-caret-position="240">
+              <caret line="71" column="14" lean-forward="true" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -170,8 +170,8 @@
         <option value="$PROJECT_DIR$/src/game/DeathSpell.java" />
         <option value="$PROJECT_DIR$/src/game/Spell.java" />
         <option value="$PROJECT_DIR$/src/game/SpellFactory.java" />
-        <option value="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" />
         <option value="$PROJECT_DIR$/src/game/DefaultLevel.java" />
+        <option value="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" />
       </list>
     </option>
   </component>
@@ -255,59 +255,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps">
-    <configuration default="false" name="DefaultLevelTests.testMovingRightShouldMakeLegalSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SimpleGame" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.DefaultLevelTests" />
-      <option name="METHOD_NAME" value="testMovingRightShouldMakeLegalSteps" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="DefaultLevelTests.testMovingUpShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SimpleGame" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.DefaultLevelTests" />
-      <option name="METHOD_NAME" value="testMovingUpShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.DefaultLevelTests.testActivateSpellShouldThrowException">
     <configuration default="false" name="DefaultLevelTests.testMovingUpShouldMakeLegalSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -373,6 +321,58 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.DefaultLevelTests" />
       <option name="METHOD_NAME" value="testMovingDownShouldMakeLegalSteps" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DefaultLevelTests.testActivateSpellShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SimpleGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.DefaultLevelTests" />
+      <option name="METHOD_NAME" value="testActivateSpellShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DefaultLevelTests.testActivateSpellShouldCreateSpell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SimpleGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.DefaultLevelTests" />
+      <option name="METHOD_NAME" value="testActivateSpellShouldCreateSpell" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -591,19 +591,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingRightShouldMakeLegalSteps" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingUpShouldThrowException" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingUpShouldMakeLegalSteps" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldThrowException" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingUpShouldMakeLegalSteps" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldThrowException" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldThrowException" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldCreateSpell" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldThrowException" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingUpShouldMakeLegalSteps" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingUpShouldThrowException" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingRightShouldMakeLegalSteps" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldThrowException" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldCreateSpell" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldThrowException" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingUpShouldMakeLegalSteps" />
       </list>
     </recent_temporary>
   </component>
@@ -621,35 +621,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DefaultLevelTests_testMovingDownShouldMakeLegalSteps - 2018.06.23 at 21h 36m 56s.xml">
-      <configuration name="DefaultLevelTests.testMovingDownShouldMakeLegalSteps" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldCreateSpell - 2018.06.24 at 00h 32m 04s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldCreateSpell" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingDownShouldThrowException - 2018.06.23 at 21h 36m 51s.xml">
-      <configuration name="DefaultLevelTests.testMovingDownShouldThrowException" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 09m 56s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingLeftShouldMakeLegalStep - 2018.06.23 at 21h 29m 14s.xml">
-      <configuration name="DefaultLevelTests.testMovingLeftShouldMakeLegalStep" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 12m 58s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingLeftShouldMakeLegalStep - 2018.06.23 at 21h 29m 26s.xml">
-      <configuration name="DefaultLevelTests.testMovingLeftShouldMakeLegalStep" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 13m 30s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingLeftShouldMakeLegalStep - 2018.06.23 at 21h 29m 44s.xml">
-      <configuration name="DefaultLevelTests.testMovingLeftShouldMakeLegalStep" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 13m 56s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingLeftShouldThrowException - 2018.06.23 at 21h 17m 23s.xml">
-      <configuration name="DefaultLevelTests.testMovingLeftShouldThrowException" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 14m 46s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingRightShouldMakeLegalSteps - 2018.06.23 at 21h 34m 31s.xml">
-      <configuration name="DefaultLevelTests.testMovingRightShouldMakeLegalSteps" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 15m 00s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingRightShouldThrowException - 2018.06.23 at 21h 34m 21s.xml">
-      <configuration name="DefaultLevelTests.testMovingRightShouldThrowException" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 23m 07s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingUpShouldMakeLegalSteps - 2018.06.23 at 21h 35m 36s.xml">
-      <configuration name="DefaultLevelTests.testMovingUpShouldMakeLegalSteps" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 25m 48s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testMovingUpShouldThrowException - 2018.06.23 at 21h 35m 28s.xml">
-      <configuration name="DefaultLevelTests.testMovingUpShouldThrowException" configurationId="JUnit" />
+    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 32m 09s.xml">
+      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -804,31 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/GameFieldTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/LuckySpell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -869,21 +844,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/DefaultLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/GameFieldTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+        <state relative-caret-position="240">
+          <caret line="71" column="14" lean-forward="true" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/DefaultLevelTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="114" column="9" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

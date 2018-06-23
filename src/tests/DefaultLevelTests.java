@@ -87,8 +87,49 @@ public class DefaultLevelTests {
         }
     }
 
-    @Test(expected = NoSpellFoundException.class)
-    public void testActivateSpellShouldThrowException() {
+    @Test(expected = Test.None.class)
+    public void testActivateSpellShouldCreateSpell() throws NoSpellFoundException{
+        boolean isHeroOnSpell = true;
+        defaultLevel.generateLevel();
+        setHeroPositionOnTestingPosition(isHeroOnSpell);
+        defaultLevel.activateSpell();
+    }
 
+    @Test(expected = NoSpellFoundException.class)
+    public void testActivateSpellShouldThrowException() throws NoSpellFoundException{
+        boolean isHeroOnSpell = false;
+        defaultLevel.generateLevel();
+        setHeroPositionOnTestingPosition(isHeroOnSpell);
+        defaultLevel.activateSpell();
+    }
+    private void setHeroPositionOnTestingPosition(boolean isHeroOnSpell) {
+        int numberOfUpSteps;
+        int numberOfLeftSteps;
+        if(isHeroOnSpell) {
+            numberOfUpSteps = 5;
+            numberOfLeftSteps = 4;
+        }
+        else {
+            numberOfUpSteps = 3;
+            numberOfLeftSteps = 3;
+        }
+        makingSteps(numberOfUpSteps, numberOfLeftSteps);
+    }
+
+    private void makingSteps(int numberOfUpSteps, int numberOfLeftSteps) {
+        for (int i = 0; i < numberOfUpSteps; i++) {
+            try {
+                defaultLevel.movingUp();
+            } catch(HeroStepOutOfGameFieldBoundsException | ForbiddenDirectionException e) {
+                System.out.println("Out of the gamefield!");
+            }
+        }
+        for (int i = 0; i < numberOfLeftSteps; i++) {
+            try {
+                defaultLevel.movingLeft();
+            } catch(HeroStepOutOfGameFieldBoundsException | ForbiddenDirectionException e) {
+                System.out.println("Out of the gamefield!");
+            }
+        }
     }
 }
