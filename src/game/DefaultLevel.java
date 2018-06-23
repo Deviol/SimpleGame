@@ -19,4 +19,30 @@ public class DefaultLevel {
         int heroCol = heroPosition.getColumnIndex();
         gameField.setNewFieldElementCode(heroRow, heroCol, "used");
     }
+
+    private void moveHeroToTheNewPosition(HeroDirection direction) {
+        heroPosition.updateHeroPosition(direction);
+        int heroRow = heroPosition.getRowIndex();
+        int heroCol = heroPosition.getColumnIndex();
+        gameField.setFieldElementStatusAt(heroRow, heroCol, FieldElementStatus.REVEALED);
+        String currentCode = gameField.getFieldElementCodeAt(heroRow, heroCol);
+        if(currentCode.equals("empty")) {
+            gameField.setNewFieldElementCode(heroRow, heroCol, "hero");
+        }
+        else if(currentCode.contains("spell:")) {
+            String newCode = "hero:" + gameField.getFieldElementCodeAt(heroRow, heroCol);
+            gameField.setNewFieldElementCode(heroRow, heroCol, newCode);
+        }
+        else if(currentCode.equals("exit")) {
+            levelStatus = LevelStatus.PASSED;
+            gameField.setNewFieldElementCode(heroRow, heroCol, "hero:exit");
+        }
+        else if(currentCode.equals("death")) {
+            levelStatus = LevelStatus.FAILED;
+            gameField.setNewFieldElementCode(heroRow, heroCol, "hero:death");
+        }
+        else {
+            //TODO има ли нужда
+        }
+    }
 }
