@@ -8,6 +8,14 @@ public class GameField {
         initializeField();
     }
 
+    public String getFieldElementCodeAt(int row, int col) {
+        return field[MAX_LENGTH_OF_FIELD * row + col].getCode();
+    }
+
+    public FieldElementStatus getFieldElementStatusAt(int row, int col) {
+        return field[MAX_LENGTH_OF_FIELD * row + col].getStatus();
+    }
+    
     private void initializeField() {
         field = new FieldElement[MAX_LENGTH_OF_FIELD * MAX_LENGTH_OF_FIELD];
         for (int i = 0; i < MAX_LENGTH_OF_FIELD; i++) {
