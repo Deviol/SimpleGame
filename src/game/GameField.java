@@ -15,7 +15,15 @@ public class GameField {
     public FieldElementStatus getFieldElementStatusAt(int row, int col) {
         return field[MAX_LENGTH_OF_FIELD * row + col].getStatus();
     }
-    
+
+    public void setNewFieldElementCode(int row, int col, String newCode) {
+        field[MAX_LENGTH_OF_FIELD * row + col].setCode(newCode);
+    }
+
+    public void setFieldElementStatusAt(int row, int col,  FieldElementStatus status) {
+        field[MAX_LENGTH_OF_FIELD * row + col].setStatus(status);
+    }
+
     private void initializeField() {
         field = new FieldElement[MAX_LENGTH_OF_FIELD * MAX_LENGTH_OF_FIELD];
         for (int i = 0; i < MAX_LENGTH_OF_FIELD; i++) {
