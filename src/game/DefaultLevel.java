@@ -83,7 +83,7 @@ public class DefaultLevel {
 
     public void generateElementAt(int row, int col, String newCode) {
         boolean isNewCodeValid = newCode.contains("spell:") ||
-                newCode.equals("exit") || newCode.equals("death");
+            newCode.equals("exit") || newCode.equals("death");
         boolean isPositionValid = gameField.isMovingSafeAt(row, col);
         if(isNewCodeValid && isPositionValid) {
             gameField.setNewFieldElementCode(row, col, newCode);

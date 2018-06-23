@@ -102,6 +102,7 @@ public class DefaultLevelTests {
         setHeroPositionOnTestingPosition(isHeroOnSpell);
         defaultLevel.activateSpell();
     }
+
     private void setHeroPositionOnTestingPosition(boolean isHeroOnSpell) {
         int numberOfUpSteps;
         int numberOfLeftSteps;
@@ -120,15 +121,17 @@ public class DefaultLevelTests {
         for (int i = 0; i < numberOfUpSteps; i++) {
             try {
                 defaultLevel.movingUp();
-            } catch(HeroStepOutOfGameFieldBoundsException | ForbiddenDirectionException e) {
-                System.out.println("Out of the gamefield!");
+            } catch(HeroStepOutOfGameFieldBoundsException |
+                ForbiddenDirectionException e) {
+                System.out.println("Out of the game field!");
             }
         }
         for (int i = 0; i < numberOfLeftSteps; i++) {
             try {
                 defaultLevel.movingLeft();
-            } catch(HeroStepOutOfGameFieldBoundsException | ForbiddenDirectionException e) {
-                System.out.println("Out of the gamefield!");
+            } catch(HeroStepOutOfGameFieldBoundsException |
+                ForbiddenDirectionException e) {
+                System.out.println("Out of the game field!");
             }
         }
     }
