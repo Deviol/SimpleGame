@@ -58,6 +58,22 @@ public class DefaultLevel {
         }
     }
 
+    public void activateSpell() throws NoSpellFoundException {
+        int heroRow = heroPosition.getRowIndex();
+        int heroCol = heroPosition.getColumnIndex();
+        String spellCode = gameField.getFieldElementCodeAt(heroRow, heroCol);
+        String[] spellParts = spellCode.split(":");
+        if(spellParts[1].equals("spell")) {
+            Spell currentSpell = SpellFactory.getAppropriateSpell(spellParts[2], gameField, hero);
+            currentSpell.activateSpecialEffectOnField();
+            currentSpell.activateSpecialEffectOnHero(5); //fix
+            gameField.setNewFieldElementCode(heroRow, heroCol, "hero");
+        }
+        else {
+            throw new NoSpellFoundException();
+        }
+    }
+
     private boolean isMovingSafeAtDirection(HeroDirection direction) {
         switch (direction) {
             case LEFT: {
