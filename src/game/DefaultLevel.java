@@ -74,6 +74,22 @@ public class DefaultLevel {
         }
     }
 
+    public void generateLevel() {
+        generateElementAt(2, 3, "spell:InfernoBlast");
+        generateElementAt(4, 9, "exit");
+        generateElementAt(14, 5, "death");
+        generateElementAt(13, 13, "exit");
+    }
+
+    public void generateElementAt(int row, int col, String newCode) {
+        boolean isNewCodeValid = newCode.contains("spell:") ||
+                newCode.equals("exit") || newCode.equals("death");
+        boolean isPositionValid = gameField.isMovingSafeAt(row, col);
+        if(isNewCodeValid && isPositionValid) {
+            gameField.setNewFieldElementCode(row, col, newCode);
+        }
+    }
+    
     private boolean isMovingSafeAtDirection(HeroDirection direction) {
         switch (direction) {
             case LEFT: {

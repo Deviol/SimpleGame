@@ -1,9 +1,6 @@
 package tests;
 
-import game.DefaultLevel;
-import game.ForbiddenDirectionException;
-import game.Hero;
-import game.HeroStepOutOfGameFieldBoundsException;
+import game.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -88,5 +85,10 @@ public class DefaultLevelTests {
         for (int step = 0; step < numberOfSteps; step++) {
             defaultLevel.movingDown();
         }
+    }
+
+    @Test(expected = NoSpellFoundException.class)
+    public void testActivateSpellShouldThrowException() {
+
     }
 }
