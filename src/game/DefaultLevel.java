@@ -14,6 +14,50 @@ public class DefaultLevel {
         heroPosition = new HeroPosition();
     }
 
+    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+        boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.LEFT);
+        if(isMovingSafe) {
+            makeOldStepUsed();
+            moveHeroToTheNewPosition(HeroDirection.LEFT);
+        }
+        else {
+            throw new HeroStepOutOfGameFieldBoundsException();
+        }
+    }
+
+    public void movingRight() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+        boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.RIGHT);
+        if(isMovingSafe) {
+            makeOldStepUsed();
+            moveHeroToTheNewPosition(HeroDirection.RIGHT);
+        }
+        else {
+            throw new HeroStepOutOfGameFieldBoundsException();
+        }
+    }
+
+    public void movingUp() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+        boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.UP);
+        if(isMovingSafe) {
+            makeOldStepUsed();
+            moveHeroToTheNewPosition(HeroDirection.UP);
+        }
+        else {
+            throw new HeroStepOutOfGameFieldBoundsException();
+        }
+    }
+
+    public void movingDown() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+        boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.DOWN);
+        if(isMovingSafe) {
+            makeOldStepUsed();
+            moveHeroToTheNewPosition(HeroDirection.DOWN);
+        }
+        else {
+            throw new HeroStepOutOfGameFieldBoundsException();
+        }
+    }
+    
     private boolean isMovingSafeAtDirection(HeroDirection direction) {
         switch (direction) {
             case LEFT: {
@@ -34,7 +78,7 @@ public class DefaultLevel {
             }
         }
     }
-    
+
     private void makeOldStepUsed() {
         int heroRow = heroPosition.getRowIndex();
         int heroCol = heroPosition.getColumnIndex();
