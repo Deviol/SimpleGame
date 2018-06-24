@@ -22,6 +22,7 @@ public class HeroTests {
     @Test
     public void testIncreaseHealthWithCaseSumOverTheLimitShouldAssignMaxHealth() {
         hero.increaseHealthWith(4);
+
         Assert.assertTrue(hero.getHealth() == 50);
     }
 

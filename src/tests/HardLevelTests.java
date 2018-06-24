@@ -1,19 +1,18 @@
 package tests;
 
-import game.HardLevel;
-import game.Hero;
-import game.HeroDirection;
+import game.*;
 import org.junit.Before;
 import org.junit.Test;
 
 public class HardLevelTests {
 
     private HardLevel hardLevel;
+    private Hero hero;
 
     @Before
     public void initializeHardLevel() {
         int randomMaxHealth = 10;
-        Hero hero = new Hero(randomMaxHealth);
+        hero = new Hero(randomMaxHealth);
         HeroDirection firstForbiddenDirection = HeroDirection.RIGHT;
         HeroDirection secondForbiddenDirection = HeroDirection.DOWN;
         int healthCostForPlaying = 3;
@@ -22,5 +21,20 @@ public class HardLevelTests {
             secondForbiddenDirection, numberOfAllowedSteps, healthCostForPlaying);
     }
 
-    
+    @Test(expected = ForbiddenDirectionException.class)
+    public void testMovingRightShouldThrowException()
+        throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+        hardLevel.movingRight();
+    }
+    @Test(expected = ForbiddenDirectionException.class)
+    public void testMovingDownShouldThrowException()
+            throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+        hardLevel.movingDown();
+    }
+
+    @Test(expected = Test.None.class)
+    public void testMovingLeftShouldMakeLegalStep()
+            throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+        hardLevel.movingLeft();
+    }
 }

@@ -2,7 +2,6 @@ package game;
 
 public class HardLevel extends DefaultLevel{
 
-    private Hero hero;
     private HeroDirection firstForbiddenDirection;
     private HeroDirection secondForbiddenDirection;
     private int numberOfAllowedSteps;
@@ -28,7 +27,7 @@ public class HardLevel extends DefaultLevel{
             throw new ForbiddenDirectionException();
         }
         updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.LEFT);
+        //makingMoveBasedOnAllowedSteps(HeroDirection.LEFT);
     }
 
     public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
@@ -71,15 +70,16 @@ public class HardLevel extends DefaultLevel{
     }
 
     private void updateAdditionalHealthForEachStepIfNecessary() {
-        boolean isHeroLessThanHalfHealth =
-                hero.getHealth() < hero.getMaxHealth() / 2;
-        boolean isHeroLessThanQuarterHealth =
-                hero.getHealth() < hero.getHealth() / 4;
+        int heroHealth = super.getHeroHealth();
+        int heroMaxHealth = super.getHeroMaxHealth();
 
-        if(isHeroLessThanHalfHealth) {
+        boolean isHeroOnLessThanHalfHealth = heroHealth < heroMaxHealth / 2;
+        boolean isHeroOnLessThanQuarterHealth = heroHealth < heroMaxHealth / 4;
+
+        if(isHeroOnLessThanHalfHealth) {
             additionalHealthForEachStep = 1;
         }
-        if(isHeroLessThanQuarterHealth) {
+        if(isHeroOnLessThanQuarterHealth) {
             additionalHealthForEachStep = 2;
         }
     }
@@ -108,7 +108,7 @@ public class HardLevel extends DefaultLevel{
         if(numberOfAllowedSteps > 0) {
             movingTo(direction);
             numberOfAllowedSteps--;
-            hero.increaseHealthWith(additionalHealthForEachStep);
+            super.increaseHeroHealthBy(additionalHealthForEachStep);
         }
         else {
             super.setLevelStatus(LevelStatus.FAILED);
@@ -135,5 +135,9 @@ public class HardLevel extends DefaultLevel{
                 break;
             }
         }
+    }
+
+    public static void main(String[] args) {
+
     }
 }

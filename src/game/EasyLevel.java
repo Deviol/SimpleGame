@@ -2,7 +2,6 @@ package game;
 
 public class EasyLevel extends DefaultLevel{
 
-    private Hero hero;
     private HeroDirection forbiddenDirection;
 
     public EasyLevel(Hero hero, HeroDirection forbiddenDirection) {
