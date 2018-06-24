@@ -7,13 +7,12 @@ import org.junit.Test;
 public class EasyLevelTests {
 
     private EasyLevel easyLevel;
-    private Hero hero;
 
     @Before
     public void initializeEasyLevel() {
         int maxHealth = 50;
         HeroDirection forbiddenDirection = HeroDirection.UP;
-        hero = new Hero(maxHealth);
+        Hero hero = new Hero(maxHealth);
         easyLevel = new EasyLevel(hero, forbiddenDirection);
     }
 

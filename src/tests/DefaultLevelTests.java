@@ -101,6 +101,30 @@ public class DefaultLevelTests {
         defaultLevel.activateSpell();
     }
 
+    @Test(expected = FailedGeneratingElementException.class)
+    public void testGenerateElementAtShouldThrowExceptionCaseInvalidIndices()
+        throws FailedGeneratingElementException {
+        int randomRow = 3;
+        int badRandomCol = 15;
+        defaultLevel.generateElementAt(randomRow, badRandomCol, "spell:InfernoSpell");
+    }
+
+    @Test(expected = FailedGeneratingElementException.class)
+    public void testGenerateElementAtShouldThrowExceptionCaseInvalidElementCode()
+            throws FailedGeneratingElementException {
+        int randomRow = 3;
+        int randomCol = 14;
+        defaultLevel.generateElementAt(randomRow, randomCol, "spell.InfernoSpell");
+    }
+
+    @Test
+    public void testGenerateElementAtShouldAssignNewCode()
+            throws FailedGeneratingElementException {
+        int randomRow = 3;
+        int randomCol = 14;
+        defaultLevel.generateElementAt(randomRow, randomCol, "spell:InfernoSpell");
+    }
+
     private void setHeroPositionOnTestingPosition(boolean isHeroOnSpell) {
         int numberOfUpSteps;
         int numberOfLeftSteps;
