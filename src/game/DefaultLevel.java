@@ -104,7 +104,7 @@ public class DefaultLevel {
             gameField.setNewFieldElementCode(row, col, newCode);
         }
         else {
-            throw new FailedGeneratingElementException();
+            throw new FailedGeneratingElementException(row, col , newCode);
         }
     }
 

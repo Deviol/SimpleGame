@@ -110,11 +110,19 @@ public class DefaultLevelTests {
     }
 
     @Test(expected = FailedGeneratingElementException.class)
-    public void testGenerateElementAtShouldThrowExceptionCaseInvalidElementCode()
+    public void testGenerateElementAtShouldThrowExceptionCaseInvalidElementCodeV1()
             throws FailedGeneratingElementException {
         int randomRow = 3;
         int randomCol = 14;
         defaultLevel.generateElementAt(randomRow, randomCol, "spell.InfernoSpell");
+    }
+
+    @Test(expected = FailedGeneratingElementException.class)
+    public void testGenerateElementAtShouldThrowExceptionCaseInvalidElementCodeV2()
+            throws FailedGeneratingElementException {
+        int randomRow = 3;
+        int randomCol = 14;
+        defaultLevel.generateElementAt(randomRow, randomCol, "sspell:InfernoSpell");
     }
 
     @Test
