@@ -33,6 +33,10 @@ public class GameField {
         return isColumnIndexInBounds && isRowIndexInBounds;
     }
 
+    public void setSectorOfFieldElements(int fromRow, int toRow, int fromCol, int toCol) {
+
+    }
+
     private void initializeField() {
         field = new FieldElement[MAX_LENGTH_OF_FIELD * MAX_LENGTH_OF_FIELD];
         for (int i = 0; i < MAX_LENGTH_OF_FIELD; i++) {

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/GameField.java" afterPath="$PROJECT_DIR$/src/game/GameField.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/HardLevel.java" afterPath="$PROJECT_DIR$/src/game/HardLevel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Hero.java" afterPath="$PROJECT_DIR$/src/game/Hero.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,16 +47,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Spell.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/Spell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EasyLevelTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/EasyLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,8 +62,18 @@
       <file leaf-file-name="HardLevel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/HardLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1278">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="408">
+              <caret line="105" column="35" lean-forward="true" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -103,26 +103,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForbiddenDirectionException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/ForbiddenDirectionException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="848">
               <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
               <folding>
                 <element signature="e#3714#3715#0" expanded="true" />
                 <element signature="e#3773#3774#0" expanded="true" />
                 <element signature="e#3819#3820#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeathSpell.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/DeathSpell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,6 +148,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>makingMoveBasedOnAllowedSteps</find>
+      <find>makeMoveIfHeroIsNotOutOfSteps</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>makingMoveBasedOnAllowedSteps</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -167,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/game/HeroDirection.java" />
         <option value="$PROJECT_DIR$/src/tests/HeroTests.java" />
         <option value="$PROJECT_DIR$/src/game/LevelStatus.java" />
-        <option value="$PROJECT_DIR$/src/game/GameField.java" />
         <option value="$PROJECT_DIR$/src/tests/GameFieldTests.java" />
         <option value="$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java" />
         <option value="$PROJECT_DIR$/src/game/InfernoSpell.java" />
@@ -182,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/game/EasyLevel.java" />
         <option value="$PROJECT_DIR$/src/game/DefaultLevel.java" />
         <option value="$PROJECT_DIR$/src/game/Hero.java" />
+        <option value="$PROJECT_DIR$/src/game/GameField.java" />
         <option value="$PROJECT_DIR$/src/game/HardLevel.java" />
       </list>
     </option>
@@ -788,14 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/DeathSpell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/InfernoSpell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -812,19 +813,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#260#261#0" expanded="true" />
             <element signature="e#303#304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -889,6 +877,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/EasyLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -909,7 +909,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="848">
           <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
           <folding>
             <element signature="e#3714#3715#0" expanded="true" />
@@ -919,22 +919,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Hero.java">
+    <entry file="file://$PROJECT_DIR$/src/game/DeathSpell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding>
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/HardLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1278">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="408">
+          <caret line="105" column="35" lean-forward="true" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
           <folding />
         </state>
       </provider>

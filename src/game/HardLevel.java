@@ -8,6 +8,7 @@ public class HardLevel extends DefaultLevel{
     private int numberOfAllowedSteps;
     private int healthCostForPlaying;
     private int additionalHealthForEachStep;
+
     public HardLevel(Hero hero, HeroDirection firstForbiddenDirection,
                  HeroDirection secondForbiddenDirection,
                  int numberOfAllowedSteps, int healthCostForPlaying) {
@@ -27,37 +28,37 @@ public class HardLevel extends DefaultLevel{
             throw new ForbiddenDirectionException();
         }
         updateAdditionalHealthForEachStepIfNecessary();
-        makeMoveIfHeroIsNotOutOfSteps(HeroDirection.LEFT);
+        makingMoveBasedOnAllowedSteps(HeroDirection.LEFT);
     }
 
     public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
             ForbiddenDirectionException {
         boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.RIGHT);
-        if(isForbiddenDirection ) {
+        if(isForbiddenDirection) {
             throw new ForbiddenDirectionException();
         }
         updateAdditionalHealthForEachStepIfNecessary();
-        makeMoveIfHeroIsNotOutOfSteps(HeroDirection.RIGHT);
+        makingMoveBasedOnAllowedSteps(HeroDirection.RIGHT);
     }
 
     public void movingUp() throws HeroStepOutOfGameFieldBoundsException,
             ForbiddenDirectionException {
         boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.UP);
-        if(isForbiddenDirection ) {
+        if(isForbiddenDirection) {
             throw new ForbiddenDirectionException();
         }
         updateAdditionalHealthForEachStepIfNecessary();
-        makeMoveIfHeroIsNotOutOfSteps(HeroDirection.UP);
+        makingMoveBasedOnAllowedSteps(HeroDirection.UP);
     }
 
     public void movingDown() throws HeroStepOutOfGameFieldBoundsException,
             ForbiddenDirectionException {
         boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.DOWN);
-        if(isForbiddenDirection ) {
+        if(isForbiddenDirection) {
             throw new ForbiddenDirectionException();
         }
         updateAdditionalHealthForEachStepIfNecessary();
-        makeMoveIfHeroIsNotOutOfSteps(HeroDirection.DOWN);
+        makingMoveBasedOnAllowedSteps(HeroDirection.DOWN);
     }
 
     public void activateSpell() throws NoSpellFoundException {
@@ -83,7 +84,22 @@ public class HardLevel extends DefaultLevel{
         }
     }
 
-    private void makeMoveIfHeroIsNotOutOfSteps(HeroDirection direction)
+    public void generateLevel() {
+        super.generateLevel();
+        try {
+            super.generateElementAt(5, 4, "death");
+            super.generateElementAt(3, 12, "death");
+            super.generateElementAt(7, 10, "death");
+            super.generateElementAt(5, 11, "spell:InfernoSpell");
+            for (int i = 4; i < 12; i++) {
+                super.generateElementAt(i, 5, "spell:InfernoSpell");
+            }
+        }
+        catch(FailedGeneratingElementException e) {
+            //TODO throw another exception
+        }
+    }
+    private void makingMoveBasedOnAllowedSteps(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
         if(numberOfAllowedSteps > 0) {
             movingTo(direction);
