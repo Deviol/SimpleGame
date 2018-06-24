@@ -78,7 +78,7 @@ public class DefaultLevel {
             gameField.setNewFieldElementCode(heroRow, heroCol, "hero");
         }
         else {
-            throw new NoSpellFoundException();
+            throw new NoSpellFoundException(heroPosition);
         }
     }
 
@@ -97,7 +97,7 @@ public class DefaultLevel {
 
     public void generateElementAt(int row, int col, String newCode)
         throws FailedGeneratingElementException {
-        boolean isNewCodeValid = newCode.contains("spell:") ||
+        boolean isNewCodeValid = newCode.startsWith("spell:") ||
             newCode.equals("exit") || newCode.equals("death");
         boolean isPositionValid = gameField.isMovingSafeAt(row, col);
         if(isNewCodeValid && isPositionValid) {

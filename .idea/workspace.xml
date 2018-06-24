@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/DefaultLevel.java" afterPath="$PROJECT_DIR$/src/game/DefaultLevel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java" afterPath="$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/NoSpellFoundException.java" afterPath="$PROJECT_DIR$/src/game/NoSpellFoundException.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,19 +60,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HardLevel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/HardLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-              <folding>
-                <element signature="e#3926#3927#0" expanded="true" />
-                <element signature="e#3971#3972#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HeroTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/HeroTests.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,19 +87,32 @@
       <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="64" column="83" lean-forward="false" selection-start-line="64" selection-start-column="83" selection-end-line="64" selection-end-column="83" />
+            <state relative-caret-position="220">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
-                <element signature="e#4060#4061#0" expanded="true" />
-                <element signature="e#4094#4095#0" expanded="true" />
-                <element signature="e#4153#4154#0" expanded="true" />
-                <element signature="e#4199#4200#0" expanded="true" />
-                <element signature="e#4233#4234#0" expanded="true" />
-                <element signature="e#4272#4273#0" expanded="true" />
-                <element signature="e#4308#4309#0" expanded="true" />
-                <element signature="e#4350#4351#0" expanded="true" />
-                <element signature="e#4401#4402#0" expanded="true" />
-                <element signature="e#4448#4449#0" expanded="true" />
+                <element signature="e#4074#4075#0" expanded="true" />
+                <element signature="e#4108#4109#0" expanded="true" />
+                <element signature="e#4167#4168#0" expanded="true" />
+                <element signature="e#4213#4214#0" expanded="true" />
+                <element signature="e#4247#4248#0" expanded="true" />
+                <element signature="e#4286#4287#0" expanded="true" />
+                <element signature="e#4322#4323#0" expanded="true" />
+                <element signature="e#4364#4365#0" expanded="true" />
+                <element signature="e#4415#4416#0" expanded="true" />
+                <element signature="e#4462#4463#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoSpellFoundException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/NoSpellFoundException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#170#171#0" expanded="true" />
+                <element signature="e#218#219#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/game/Spell.java" />
         <option value="$PROJECT_DIR$/src/game/InvalidElementCodeException.java" />
         <option value="$PROJECT_DIR$/src/game/SpellFactory.java" />
-        <option value="$PROJECT_DIR$/src/game/NoSpellFoundException.java" />
         <option value="$PROJECT_DIR$/src/game/Hero.java" />
         <option value="$PROJECT_DIR$/src/game/GameField.java" />
         <option value="$PROJECT_DIR$/src/tests/HeroTests.java" />
@@ -208,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/game/IndexType.java" />
         <option value="$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java" />
         <option value="$PROJECT_DIR$/src/game/DefaultLevel.java" />
+        <option value="$PROJECT_DIR$/src/game/NoSpellFoundException.java" />
       </list>
     </option>
   </component>
@@ -818,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/NoSpellFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/SpellFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -958,21 +950,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/NoSpellFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="64" column="83" lean-forward="false" selection-start-line="64" selection-start-column="83" selection-end-line="64" selection-end-column="83" />
+        <state relative-caret-position="220">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
-            <element signature="e#4060#4061#0" expanded="true" />
-            <element signature="e#4094#4095#0" expanded="true" />
-            <element signature="e#4153#4154#0" expanded="true" />
-            <element signature="e#4199#4200#0" expanded="true" />
-            <element signature="e#4233#4234#0" expanded="true" />
-            <element signature="e#4272#4273#0" expanded="true" />
-            <element signature="e#4308#4309#0" expanded="true" />
-            <element signature="e#4350#4351#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-            <element signature="e#4448#4449#0" expanded="true" />
+            <element signature="e#4074#4075#0" expanded="true" />
+            <element signature="e#4108#4109#0" expanded="true" />
+            <element signature="e#4167#4168#0" expanded="true" />
+            <element signature="e#4213#4214#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4286#4287#0" expanded="true" />
+            <element signature="e#4322#4323#0" expanded="true" />
+            <element signature="e#4364#4365#0" expanded="true" />
+            <element signature="e#4415#4416#0" expanded="true" />
+            <element signature="e#4462#4463#0" expanded="true" />
           </folding>
         </state>
       </provider>
