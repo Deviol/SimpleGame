@@ -99,6 +99,10 @@ public class HardLevel extends DefaultLevel{
             //TODO throw another exception
         }
     }
+
+    public LevelStatus getLevelStatus() {
+        return super.getLevelStatus();
+    }
     private void makingMoveBasedOnAllowedSteps(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
         if(numberOfAllowedSteps > 0) {
