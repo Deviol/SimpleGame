@@ -12,7 +12,7 @@ public class EasyLevel extends DefaultLevel{
     public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.LEFT) {
-            throw new ForbiddenDirectionException();
+            throw new ForbiddenDirectionException(HeroDirection.LEFT);
         }
         super.movingLeft();
     }
@@ -20,7 +20,7 @@ public class EasyLevel extends DefaultLevel{
     public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.RIGHT) {
-            throw new ForbiddenDirectionException();
+            throw new ForbiddenDirectionException(HeroDirection.RIGHT);
         }
         super.movingRight();
     }
@@ -28,7 +28,7 @@ public class EasyLevel extends DefaultLevel{
     public void movingUp() throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.UP) {
-            throw new ForbiddenDirectionException();
+            throw new ForbiddenDirectionException(HeroDirection.UP);
         }
         super.movingUp();
     }
@@ -36,7 +36,7 @@ public class EasyLevel extends DefaultLevel{
     public void movingDown() throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.DOWN) {
-            throw new ForbiddenDirectionException();
+            throw new ForbiddenDirectionException(HeroDirection.DOWN);
         }
         super.movingDown();
     }

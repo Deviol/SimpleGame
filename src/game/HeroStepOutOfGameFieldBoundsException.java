@@ -12,16 +12,9 @@ public class HeroStepOutOfGameFieldBoundsException extends Exception{
 
     @Override
     public String toString() {
-        String type = convertIndexTypeToString();
+        String type = String.valueOf(indexType).toLowerCase();
         String indexMessage = String.valueOf(index);
         String resultMessage = indexMessage + " is not a valid " + type + " index!";
         return resultMessage;
-    }
-
-    private String convertIndexTypeToString() {
-        if(indexType == IndexType.COLUMN) {
-            return "column";
-        }
-        return "row";
     }
 }

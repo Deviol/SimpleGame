@@ -24,7 +24,7 @@ public class HardLevel extends DefaultLevel{
             ForbiddenDirectionException {
         boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.LEFT);
         if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException();
+            throw new ForbiddenDirectionException(HeroDirection.LEFT);
         }
         updateAdditionalHealthForEachStepIfNecessary();
         makingMoveBasedOnAllowedSteps(HeroDirection.LEFT);
@@ -34,7 +34,7 @@ public class HardLevel extends DefaultLevel{
             ForbiddenDirectionException {
         boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.RIGHT);
         if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException();
+            throw new ForbiddenDirectionException(HeroDirection.RIGHT);
         }
         updateAdditionalHealthForEachStepIfNecessary();
         makingMoveBasedOnAllowedSteps(HeroDirection.RIGHT);
@@ -44,7 +44,7 @@ public class HardLevel extends DefaultLevel{
             ForbiddenDirectionException {
         boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.UP);
         if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException();
+            throw new ForbiddenDirectionException(HeroDirection.UP);
         }
         updateAdditionalHealthForEachStepIfNecessary();
         makingMoveBasedOnAllowedSteps(HeroDirection.UP);
@@ -54,7 +54,7 @@ public class HardLevel extends DefaultLevel{
             ForbiddenDirectionException {
         boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.DOWN);
         if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException();
+            throw new ForbiddenDirectionException(HeroDirection.DOWN);
         }
         updateAdditionalHealthForEachStepIfNecessary();
         makingMoveBasedOnAllowedSteps(HeroDirection.DOWN);
