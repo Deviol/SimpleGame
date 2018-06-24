@@ -4,8 +4,8 @@ public class DefaultLevel {
 
     private GameField gameField;
     private Hero hero;
-    private LevelStatus levelStatus;
     private HeroPosition heroPosition;
+    private LevelStatus levelStatus;
 
     public DefaultLevel(Hero hero) {
         this.gameField = new GameField();
@@ -14,47 +14,55 @@ public class DefaultLevel {
         heroPosition = new HeroPosition();
     }
 
-    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
         boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.LEFT);
         if(isMovingSafe) {
             makeOldStepUsed();
             moveHeroToTheNewPosition(HeroDirection.LEFT);
         }
         else {
-            throw new HeroStepOutOfGameFieldBoundsException();
+            int badIndex = heroPosition.getColumnIndex() - 1;
+            throw new HeroStepOutOfGameFieldBoundsException(badIndex, IndexType.COLUMN);
         }
     }
 
-    public void movingRight() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+    public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
         boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.RIGHT);
         if(isMovingSafe) {
             makeOldStepUsed();
             moveHeroToTheNewPosition(HeroDirection.RIGHT);
         }
         else {
-            throw new HeroStepOutOfGameFieldBoundsException();
+            int badIndex = heroPosition.getColumnIndex() + 1;
+            throw new HeroStepOutOfGameFieldBoundsException(badIndex, IndexType.COLUMN);
         }
     }
 
-    public void movingUp() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+    public void movingUp() throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
         boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.UP);
         if(isMovingSafe) {
             makeOldStepUsed();
             moveHeroToTheNewPosition(HeroDirection.UP);
         }
         else {
-            throw new HeroStepOutOfGameFieldBoundsException();
+            int badIndex = heroPosition.getRowIndex() - 1;
+            throw new HeroStepOutOfGameFieldBoundsException(badIndex, IndexType.ROW);
         }
     }
 
-    public void movingDown() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+    public void movingDown() throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
         boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.DOWN);
         if(isMovingSafe) {
             makeOldStepUsed();
             moveHeroToTheNewPosition(HeroDirection.DOWN);
         }
         else {
-            throw new HeroStepOutOfGameFieldBoundsException();
+            int badIndex = heroPosition.getRowIndex() + 1;
+            throw new HeroStepOutOfGameFieldBoundsException(badIndex, IndexType.ROW);
         }
     }
 
@@ -87,7 +95,8 @@ public class DefaultLevel {
 
     }
 
-    public void generateElementAt(int row, int col, String newCode) throws FailedGeneratingElementException {
+    public void generateElementAt(int row, int col, String newCode)
+        throws FailedGeneratingElementException {
         boolean isNewCodeValid = newCode.contains("spell:") ||
             newCode.equals("exit") || newCode.equals("death");
         boolean isPositionValid = gameField.isMovingSafeAt(row, col);
