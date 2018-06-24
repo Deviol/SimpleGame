@@ -76,12 +76,14 @@ public class HardLevel extends DefaultLevel{
         boolean isHeroOnLessThanHalfHealth = heroHealth < heroMaxHealth / 2;
         boolean isHeroOnLessThanQuarterHealth = heroHealth < heroMaxHealth / 4;
 
-        if(isHeroOnLessThanHalfHealth) {
-            additionalHealthForEachStep = 1;
-        }
         if(isHeroOnLessThanQuarterHealth) {
             additionalHealthForEachStep = 2;
         }
+
+        if(isHeroOnLessThanHalfHealth) {
+            additionalHealthForEachStep = 1;
+        }
+
     }
 
     public void generateLevel() {
