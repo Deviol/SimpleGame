@@ -9,14 +9,15 @@ public class HardLevelTests {
 
     private HardLevel hardLevel;
     private int numberOfAllowedSteps;
+    private Hero hero;
 
     @Before
     public void initializeHardLevel() {
         int randomMaxHealth = 10;
-        Hero hero = new Hero(randomMaxHealth);
+        hero = new Hero(randomMaxHealth);
         HeroDirection firstForbiddenDirection = HeroDirection.RIGHT;
         HeroDirection secondForbiddenDirection = HeroDirection.DOWN;
-        int healthCostForPlaying = 3;
+        int healthCostForPlaying = 6;
         numberOfAllowedSteps = 3;
         hardLevel = new HardLevel(hero, firstForbiddenDirection,
             secondForbiddenDirection, numberOfAllowedSteps, healthCostForPlaying);
@@ -44,12 +45,40 @@ public class HardLevelTests {
         throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
         hardLevel.movingUp();
     }
+    @Test
+    public void testMovingUpShouldIncreaseHeroCurrentHealthByOne()
+        throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException{
+        // from method initializeHardLevel hero's health is reduced to 4
+        int healthAfterMoving = 5;
+        hardLevel.movingUp();
+        Assert.assertTrue(hero.getHealth() == healthAfterMoving);
+    }
+
+    @Test
+    public void testMovingLeftShouldIncreaseHeroCurrentHealthByOne()
+            throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException{
+        // from method initializeHardLevel hero's health is reduced to 4
+        int healthAfterMoving = 5;
+        hardLevel.movingLeft();
+        Assert.assertTrue(hero.getHealth() == healthAfterMoving);
+    }
 
     @Test
     public void testMovingLeftShouldChangeLevelStatusToFAILED()
-        throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException{
+            throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException{
         for (int i = 0; i <= numberOfAllowedSteps; i++) {
             hardLevel.movingLeft();
+        }
+        LevelStatus hardLevelStatus = hardLevel.getLevelStatus();
+
+        Assert.assertTrue(hardLevelStatus == LevelStatus.FAILED);
+    }
+
+    @Test
+    public void testMovingUpShouldChangeLevelStatusToFAILED()
+            throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException{
+        for (int i = 0; i <= numberOfAllowedSteps; i++) {
+            hardLevel.movingUp();
         }
         LevelStatus hardLevelStatus = hardLevel.getLevelStatus();
 
