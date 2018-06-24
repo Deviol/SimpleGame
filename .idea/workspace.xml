@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/HardLevel.java" afterPath="$PROJECT_DIR$/src/game/HardLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Hero.java" afterPath="$PROJECT_DIR$/src/game/Hero.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,9 +72,23 @@
       <file leaf-file-name="HardLevel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/HardLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+            <state relative-caret-position="-1278">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/Hero.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+              <folding>
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,20 +116,12 @@
       <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeroTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/HeroTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+            <state relative-caret-position="280">
+              <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3714#3715#0" expanded="true" />
+                <element signature="e#3773#3774#0" expanded="true" />
+                <element signature="e#3819#3820#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,7 +160,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Hero.java" />
-        <option value="$PROJECT_DIR$/src/game/Hero.java" />
         <option value="$PROJECT_DIR$/src/game/FieldElement.java" />
         <option value="$PROJECT_DIR$/src/game/FieldElementStatus.java" />
         <option value="$PROJECT_DIR$/src/game/ForbiddenDirectionException.java" />
@@ -168,12 +175,13 @@
         <option value="$PROJECT_DIR$/src/game/DeathSpell.java" />
         <option value="$PROJECT_DIR$/src/game/Spell.java" />
         <option value="$PROJECT_DIR$/src/game/InvalidElementCodeException.java" />
-        <option value="$PROJECT_DIR$/src/game/DefaultLevel.java" />
         <option value="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" />
         <option value="$PROJECT_DIR$/src/game/SpellFactory.java" />
         <option value="$PROJECT_DIR$/src/game/NoSpellFoundException.java" />
         <option value="$PROJECT_DIR$/src/tests/EasyLevelTests.java" />
         <option value="$PROJECT_DIR$/src/game/EasyLevel.java" />
+        <option value="$PROJECT_DIR$/src/game/DefaultLevel.java" />
+        <option value="$PROJECT_DIR$/src/game/Hero.java" />
         <option value="$PROJECT_DIR$/src/game/HardLevel.java" />
       </list>
     </option>
@@ -702,16 +710,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/game/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="e#770#771#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/FieldElementStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -901,14 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/EasyLevel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -917,10 +907,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
+          <folding>
+            <element signature="e#3714#3715#0" expanded="true" />
+            <element signature="e#3773#3774#0" expanded="true" />
+            <element signature="e#3819#3820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/HardLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+        <state relative-caret-position="-1278">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding />
         </state>
       </provider>

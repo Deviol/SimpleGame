@@ -36,4 +36,8 @@ public class Hero {
     public int getHealth() {
         return health;
     }
+
+    public int getMaxHealth() {
+        return maxHealth;
+    }
 }
