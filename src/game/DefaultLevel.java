@@ -99,6 +99,14 @@ public class DefaultLevel {
         }
     }
 
+    public LevelStatus getLevelStatus() {
+        return levelStatus;
+    }
+
+    public void setLevelStatus(LevelStatus levelStatus) {
+        this.levelStatus = levelStatus;
+    }
+
     private boolean isMovingSafeAtDirection(HeroDirection direction) {
         switch (direction) {
             case LEFT: {

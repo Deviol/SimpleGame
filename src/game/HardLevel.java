@@ -25,6 +25,7 @@ public class HardLevel extends DefaultLevel{
         if(isForbiddenDirection) {
             throw new ForbiddenDirectionException();
         }
+
         super.movingLeft();
     }
 
