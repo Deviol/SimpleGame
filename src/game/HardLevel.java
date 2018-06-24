@@ -27,7 +27,7 @@ public class HardLevel extends DefaultLevel{
             throw new ForbiddenDirectionException();
         }
         updateAdditionalHealthForEachStepIfNecessary();
-        //makingMoveBasedOnAllowedSteps(HeroDirection.LEFT);
+        makingMoveBasedOnAllowedSteps(HeroDirection.LEFT);
     }
 
     public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
@@ -135,9 +135,5 @@ public class HardLevel extends DefaultLevel{
                 break;
             }
         }
-    }
-
-    public static void main(String[] args) {
-
     }
 }
