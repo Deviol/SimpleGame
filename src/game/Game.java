@@ -8,7 +8,7 @@ public class Game {
 
     private Hero hero;
     private Queue<String> levelNames;
-    private DefaultLevel currentLevel;
+    private DefaultLevel currentLevel = null;
 
     public Game() {
         hero = new Hero(100);
@@ -19,20 +19,23 @@ public class Game {
     private void loadNextLevel() {
         if(levelNames.isEmpty()) {
             String currentLevelName = levelNames.poll();
-            switch (currentLevelName) {
-                case "EasyLevel": {
-                    loadEasyLevel();
-                }
-                case "HardLevel": {
-                    loadHardLevel();
-                }
-                default: {
-                    currentLevel = new DefaultLevel(hero);
-                }
-            }
+            pickRightLevel(currentLevelName);
         }
     }
 
+    private void pickRightLevel(String currentLevelName) {
+        switch (currentLevelName) {
+            case "EasyLevel": {
+                loadEasyLevel();
+            }
+            case "HardLevel": {
+                loadHardLevel();
+            }
+            default: {
+                currentLevel = new DefaultLevel(hero);
+            }
+        }
+    }
     private void loadEasyLevel() {
         HeroDirection forbiddenDirection = generateRandomDirection();
         currentLevel = new EasyLevel(hero, forbiddenDirection);
