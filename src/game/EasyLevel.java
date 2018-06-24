@@ -1,6 +1,7 @@
 package game;
 
 public class EasyLevel extends DefaultLevel{
+
     private Hero hero;
     private HeroDirection forbiddenDirection;
 
@@ -9,28 +10,32 @@ public class EasyLevel extends DefaultLevel{
         this.forbiddenDirection = forbiddenDirection;
     }
 
-    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.LEFT) {
             throw new ForbiddenDirectionException();
         }
         super.movingLeft();
     }
 
-    public void movingRight() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+    public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.RIGHT) {
             throw new ForbiddenDirectionException();
         }
         super.movingRight();
     }
 
-    public void movingUp() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+    public void movingUp() throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.UP) {
             throw new ForbiddenDirectionException();
         }
         super.movingUp();
     }
 
-    public void movingDown() throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
+    public void movingDown() throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.DOWN) {
             throw new ForbiddenDirectionException();
         }
@@ -43,6 +48,13 @@ public class EasyLevel extends DefaultLevel{
 
     public void generateLevel() {
         super.generateLevel();
-        super.generateElementAt();
+        try {
+            super.generateElementAt(2, 1, "spell:LuckySpell");
+            super.generateElementAt(4, 8, "death");
+            super.generateElementAt(5, 5, "spell:LuckySpell");
+            super.generateElementAt(7, 11, "exit");
+        } catch(FailedGeneratingElementException e) {
+            //TODO throw another exception
+        }
     }
 }

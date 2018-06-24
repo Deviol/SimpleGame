@@ -1,5 +1,4 @@
 package tests;
-
 import game.*;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,12 +6,11 @@ import org.junit.Test;
 public class DefaultLevelTests {
 
     private DefaultLevel defaultLevel;
-    private Hero hero;
 
     @Before
     public void initializeDefaultLevel() {
         int randomMaxHealth = 50;
-        hero = new Hero(randomMaxHealth);
+        Hero hero = new Hero(randomMaxHealth);
         defaultLevel = new DefaultLevel(hero);
     }
 

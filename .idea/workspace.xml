@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="" />
+    <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/EasyLevel.java" afterPath="$PROJECT_DIR$/src/game/EasyLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/NoSpellFoundException.java" afterPath="$PROJECT_DIR$/src/game/NoSpellFoundException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/SpellFactory.java" afterPath="$PROJECT_DIR$/src/game/SpellFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" afterPath="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/EasyLevelTests.java" afterPath="$PROJECT_DIR$/src/tests/EasyLevelTests.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,26 +27,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameField.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/GameField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="e#152#153#0" expanded="true" />
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#317#318#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultLevelTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/DefaultLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1720">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="-120">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,40 +42,8 @@
       <file leaf-file-name="EasyLevel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/EasyLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EasyLevelTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tests/EasyLevelTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FailedGeneratingElementException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/FailedGeneratingElementException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,19 +52,73 @@
       <file leaf-file-name="Spell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Spell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="51">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfernoSpell.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/InfernoSpell.java">
+      <file leaf-file-name="EasyLevelTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/EasyLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HardLevel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/HardLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoSpellFoundException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/NoSpellFoundException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForbiddenDirectionException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/ForbiddenDirectionException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1680">
+              <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeroTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/HeroTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,23 +126,9 @@
       <file leaf-file-name="SpellFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/SpellFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="400">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameFieldTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/GameFieldTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -165,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/game/HeroDirection.java" />
         <option value="$PROJECT_DIR$/src/tests/HeroTests.java" />
         <option value="$PROJECT_DIR$/src/game/LevelStatus.java" />
-        <option value="$PROJECT_DIR$/src/game/NoSpellFoundException.java" />
         <option value="$PROJECT_DIR$/src/game/GameField.java" />
         <option value="$PROJECT_DIR$/src/tests/GameFieldTests.java" />
         <option value="$PROJECT_DIR$/src/game/HeroStepOutOfGameFieldBoundsException.java" />
@@ -173,12 +171,14 @@
         <option value="$PROJECT_DIR$/src/game/LuckySpell.java" />
         <option value="$PROJECT_DIR$/src/game/DeathSpell.java" />
         <option value="$PROJECT_DIR$/src/game/Spell.java" />
-        <option value="$PROJECT_DIR$/src/game/SpellFactory.java" />
-        <option value="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" />
-        <option value="$PROJECT_DIR$/src/tests/EasyLevelTests.java" />
-        <option value="$PROJECT_DIR$/src/game/EasyLevel.java" />
         <option value="$PROJECT_DIR$/src/game/InvalidElementCodeException.java" />
         <option value="$PROJECT_DIR$/src/game/DefaultLevel.java" />
+        <option value="$PROJECT_DIR$/src/tests/DefaultLevelTests.java" />
+        <option value="$PROJECT_DIR$/src/game/SpellFactory.java" />
+        <option value="$PROJECT_DIR$/src/game/NoSpellFoundException.java" />
+        <option value="$PROJECT_DIR$/src/tests/EasyLevelTests.java" />
+        <option value="$PROJECT_DIR$/src/game/EasyLevel.java" />
+        <option value="$PROJECT_DIR$/src/game/HardLevel.java" />
       </list>
     </option>
   </component>
@@ -262,33 +262,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.EasyLevelTests.testMovingUpShouldThrowException">
-    <configuration default="false" name="DefaultLevelTests.testMovingDownShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SimpleGame" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.DefaultLevelTests" />
-      <option name="METHOD_NAME" value="testMovingDownShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.EasyLevelTests.testGenerateLevelShouldGenerateElementsProperly">
     <configuration default="false" name="DefaultLevelTests.testMovingDownShouldMakeLegalSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -380,6 +354,32 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.EasyLevelTests" />
       <option name="METHOD_NAME" value="testMovingUpShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="EasyLevelTests.testGenerateLevelShouldGenerateElementsProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SimpleGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.EasyLevelTests" />
+      <option name="METHOD_NAME" value="testGenerateLevelShouldGenerateElementsProperly" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -598,19 +598,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldThrowException" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldThrowException" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldCreateSpell" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EasyLevelTests.testMovingUpShouldThrowException" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldThrowException" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldCreateSpell" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EasyLevelTests.testMovingUpShouldThrowException" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EasyLevelTests.testGenerateLevelShouldGenerateElementsProperly" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EasyLevelTests.testMovingUpShouldThrowException" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldThrowException" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldCreateSpell" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldThrowException" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EasyLevelTests.testGenerateLevelShouldGenerateElementsProperly" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EasyLevelTests.testMovingUpShouldThrowException" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldThrowException" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testActivateSpellShouldCreateSpell" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests.testMovingDownShouldMakeLegalSteps" />
       </list>
     </recent_temporary>
   </component>
@@ -631,12 +631,6 @@
     <history-entry file="DefaultLevelTests_testActivateSpellShouldCreateSpell - 2018.06.24 at 00h 32m 04s.xml">
       <configuration name="DefaultLevelTests.testActivateSpellShouldCreateSpell" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 13m 30s.xml">
-      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 13m 56s.xml">
-      <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 14m 46s.xml">
       <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
     </history-entry>
@@ -654,6 +648,12 @@
     </history-entry>
     <history-entry file="DefaultLevelTests_testActivateSpellShouldThrowException - 2018.06.24 at 00h 56m 25s.xml">
       <configuration name="DefaultLevelTests.testActivateSpellShouldThrowException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EasyLevelTests_testGenerateLevelShouldGenerateElementsProperly - 2018.06.24 at 13h 51m 04s.xml">
+      <configuration name="EasyLevelTests.testGenerateLevelShouldGenerateElementsProperly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EasyLevelTests_testGenerateLevelShouldGenerateElementsProperly - 2018.06.24 at 13h 51m 47s.xml">
+      <configuration name="EasyLevelTests.testGenerateLevelShouldGenerateElementsProperly" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EasyLevelTests_testMovingUpShouldThrowException - 2018.06.24 at 13h 08m 27s.xml">
       <configuration name="EasyLevelTests.testMovingUpShouldThrowException" configurationId="JUnit" />
@@ -724,14 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/ForbiddenDirectionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/HeroDirection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -769,14 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/NoSpellFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="53" lean-forward="true" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/FieldElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -790,16 +774,6 @@
             <element signature="e#561#562#0" expanded="true" />
             <element signature="e#592#593#0" expanded="true" />
             <element signature="e#619#620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/HeroTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -824,14 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Spell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -869,32 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/SpellFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/DefaultLevelTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/EasyLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/FailedGeneratingElementException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -903,21 +843,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/HeroTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+        <state relative-caret-position="266">
+          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Spell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/ForbiddenDirectionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/DefaultLevelTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/NoSpellFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/SpellFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/EasyLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/EasyLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/DefaultLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/HardLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
