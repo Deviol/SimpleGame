@@ -40,4 +40,9 @@ public class EasyLevel extends DefaultLevel{
     public void activateSpell() throws NoSpellFoundException {
         super.activateSpell();
     }
+
+    public void generateLevel() {
+        super.generateLevel();
+        super.generateElementAt();
+    }
 }
