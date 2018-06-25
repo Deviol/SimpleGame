@@ -1,8 +1,9 @@
-package game;
+package game.spells;
 
-import javafx.util.Pair;
+import game.field.CustomGameField;
+import game.hero.Hero;
 
-public class DeathSpell implements Spell{
+public class DeathSpell implements Spell {
 
     private CustomGameField gameField;
     private Hero hero;

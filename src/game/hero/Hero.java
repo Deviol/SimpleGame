@@ -1,4 +1,4 @@
-package game;
+package game.hero;
 
 public class Hero {
     private int health;

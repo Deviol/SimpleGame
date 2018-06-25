@@ -1,4 +1,4 @@
-package game;
+package game.spells;
 
 public interface Spell {
 

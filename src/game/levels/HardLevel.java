@@ -1,8 +1,11 @@
-package game;
+package game.levels;
 
+import game.hero.Hero;
+import game.enums.HeroDirection;
+import game.enums.LevelStatus;
 import game.exceptions.*;
 
-public class HardLevel extends DefaultLevel{
+public class HardLevel extends DefaultLevel {
 
     private HeroDirection firstForbiddenDirection;
     private HeroDirection secondForbiddenDirection;
@@ -11,8 +14,8 @@ public class HardLevel extends DefaultLevel{
     private int additionalHealthForEachStep;
 
     public HardLevel(Hero hero, HeroDirection firstForbiddenDirection,
-                 HeroDirection secondForbiddenDirection,
-                 int numberOfAllowedSteps, int healthCostForPlaying) {
+                     HeroDirection secondForbiddenDirection,
+                     int numberOfAllowedSteps, int healthCostForPlaying) {
         super(hero);
         this.firstForbiddenDirection = firstForbiddenDirection;
         this.secondForbiddenDirection = secondForbiddenDirection;

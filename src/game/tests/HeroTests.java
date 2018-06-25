@@ -1,8 +1,8 @@
 package game.tests;
 
-import game.Hero;
-import game.HeroDirection;
-import game.HeroPosition;
+import game.hero.Hero;
+import game.enums.HeroDirection;
+import game.hero.HeroPosition;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

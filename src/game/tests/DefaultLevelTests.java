@@ -1,9 +1,10 @@
 package game.tests;
-import game.*;
 import game.exceptions.FailedGeneratingElementException;
 import game.exceptions.ForbiddenDirectionException;
 import game.exceptions.HeroStepOutOfGameFieldBoundsException;
 import game.exceptions.NoSpellFoundException;
+import game.hero.Hero;
+import game.levels.DefaultLevel;
 import org.junit.Before;
 import org.junit.Test;
 

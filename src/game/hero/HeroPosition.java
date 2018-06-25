@@ -1,4 +1,6 @@
-package game;
+package game.hero;
+
+import game.enums.HeroDirection;
 
 public class HeroPosition {
     public final static int DEFAULT_INDEX_OF_HERO_POSITION = 7;

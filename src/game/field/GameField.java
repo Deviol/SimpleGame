@@ -1,4 +1,6 @@
-package game;
+package game.field;
+
+import game.enums.FieldElementStatus;
 
 public class GameField {
     private FieldElement[] field;

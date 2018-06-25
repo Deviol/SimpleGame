@@ -1,8 +1,10 @@
-package game;
+package game.spells;
 
+import game.field.CustomGameField;
+import game.hero.Hero;
 import game.exceptions.InvalidSectorException;
 
-public class InfernoSpell implements Spell{
+public class InfernoSpell implements Spell {
 
     private CustomGameField gameField;
     private Hero hero;

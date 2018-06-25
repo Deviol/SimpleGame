@@ -1,6 +1,16 @@
-package game;
+package game.levels;
 
+import game.enums.FieldElementStatus;
+import game.enums.HeroDirection;
+import game.enums.IndexType;
+import game.enums.LevelStatus;
 import game.exceptions.*;
+import game.field.CustomGameField;
+import game.field.GameField;
+import game.hero.Hero;
+import game.hero.HeroPosition;
+import game.spells.Spell;
+import game.spells.SpellFactory;
 
 public class DefaultLevel {
 

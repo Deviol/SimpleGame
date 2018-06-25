@@ -1,6 +1,6 @@
 package game.exceptions;
 
-import game.IndexType;
+import game.enums.IndexType;
 
 public class HeroStepOutOfGameFieldBoundsException extends Exception{
 

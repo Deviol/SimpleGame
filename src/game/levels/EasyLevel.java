@@ -1,8 +1,10 @@
-package game;
+package game.levels;
 
+import game.hero.Hero;
+import game.enums.HeroDirection;
 import game.exceptions.*;
 
-public class EasyLevel extends DefaultLevel{
+public class EasyLevel extends DefaultLevel {
 
     private HeroDirection forbiddenDirection;
 

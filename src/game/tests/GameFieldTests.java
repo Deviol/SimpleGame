@@ -1,7 +1,7 @@
 package game.tests;
 
-import game.FieldElementStatus;
-import game.GameField;
+import game.enums.FieldElementStatus;
+import game.field.GameField;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

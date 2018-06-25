@@ -1,6 +1,6 @@
 package game.exceptions;
 
-import game.GameField;
+import game.field.GameField;
 
 public class InvalidSectorException extends Exception {
 

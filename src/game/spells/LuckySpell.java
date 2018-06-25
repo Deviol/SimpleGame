@@ -1,8 +1,10 @@
-package game;
+package game.spells;
 
+import game.field.CustomGameField;
+import game.hero.Hero;
 import game.exceptions.InvalidSectorException;
 
-public class LuckySpell implements Spell{
+public class LuckySpell implements Spell {
 
     private CustomGameField gameField;
     private Hero hero;

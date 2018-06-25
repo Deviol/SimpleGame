@@ -1,4 +1,7 @@
-package game;
+package game.spells;
+
+import game.field.CustomGameField;
+import game.hero.Hero;
 
 public class SpellFactory {
 

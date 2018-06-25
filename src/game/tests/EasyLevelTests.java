@@ -1,8 +1,10 @@
 package game.tests;
 
-import game.*;
+import game.enums.HeroDirection;
 import game.exceptions.ForbiddenDirectionException;
 import game.exceptions.HeroStepOutOfGameFieldBoundsException;
+import game.hero.Hero;
+import game.levels.EasyLevel;
 import org.junit.Before;
 import org.junit.Test;
 

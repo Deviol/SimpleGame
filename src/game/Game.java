@@ -1,5 +1,11 @@
 package game;
 
+import game.enums.HeroDirection;
+import game.hero.Hero;
+import game.levels.DefaultLevel;
+import game.levels.EasyLevel;
+import game.levels.HardLevel;
+
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Random;

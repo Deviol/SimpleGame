@@ -1,6 +1,6 @@
 package game.exceptions;
 
-import game.HeroDirection;
+import game.enums.HeroDirection;
 
 public class ForbiddenDirectionException extends Exception{
 

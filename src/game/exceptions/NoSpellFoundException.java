@@ -1,6 +1,6 @@
 package game.exceptions;
 
-import game.HeroPosition;
+import game.hero.HeroPosition;
 
 public class NoSpellFoundException extends Exception{
 
