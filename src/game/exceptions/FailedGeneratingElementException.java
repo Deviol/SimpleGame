@@ -20,8 +20,6 @@ public class FailedGeneratingElementException extends Exception {
         String result;
         boolean isRowIndexOutOfBounds =  rowIndex < 0 || rowIndex >= GameField.MAX_LENGTH_OF_FIELD;
         boolean isColumnIndexOutOfBounds = columnIndex < 0 || columnIndex >= GameField.MAX_LENGTH_OF_FIELD;
-        boolean isElementCodeInvalid = !elementCode.startsWith("spell:") ||
-            !elementCode.equals("exit") || elementCode.equals("death");
 
         if(isRowIndexOutOfBounds) {
             result = "Row index \"" + rowIndex + "\" is not valid!";
@@ -34,5 +32,11 @@ public class FailedGeneratingElementException extends Exception {
         }
 
         return result;
+    }
+
+    @Override
+    public String toString() {
+        String message = findReasonForException();
+        return message;
     }
 }

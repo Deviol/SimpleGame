@@ -29,13 +29,13 @@ public class InvalidSectorException extends Exception {
 
     private String finReasonForException() {
         boolean isFromRowIndexInvalid =
-            fromRowIndex < 0 && GameField.MAX_LENGTH_OF_FIELD <= fromRowIndex;
+            fromRowIndex < 0 || GameField.MAX_LENGTH_OF_FIELD <= fromRowIndex;
         boolean isToRowIndexInvalid =
-                toRowIndex < 0 && GameField.MAX_LENGTH_OF_FIELD <= toRowIndex;
+                toRowIndex < 0 || GameField.MAX_LENGTH_OF_FIELD <= toRowIndex;
         boolean isFromColumnIndexInvalid =
-                fromColumnIndex < 0 && GameField.MAX_LENGTH_OF_FIELD <= fromColumnIndex;
+                fromColumnIndex < 0 || GameField.MAX_LENGTH_OF_FIELD <= fromColumnIndex;
         boolean isToColumnIndexInvalid =
-                toColumnIndex < 0 && GameField.MAX_LENGTH_OF_FIELD <= toColumnIndex;
+                toColumnIndex < 0 || GameField.MAX_LENGTH_OF_FIELD <= toColumnIndex;
 
         String result;
         if(isFromRowIndexInvalid) {
