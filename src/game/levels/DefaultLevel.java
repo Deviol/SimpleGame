@@ -120,9 +120,11 @@ public class DefaultLevel {
             throw new FailedGeneratingElementException(row, col , newCode);
         }
     }
+    
     public void showGameFieldToUser() {
         gameField.printGameFieldForUserView();
     }
+
     public LevelStatus getLevelStatus() {
         return levelStatus;
     }
@@ -134,12 +136,15 @@ public class DefaultLevel {
     public int getHeroHealth() {
         return hero.getHealth();
     }
+
     public int getHeroMaxHealth() {
         return hero.getMaxHealth();
     }
+
     public void increaseHeroHealthBy(int health) {
         hero.increaseHealthWith(health);
     }
+
     private boolean isMovingSafeAtDirection(HeroDirection direction) {
         switch (direction) {
             case LEFT: {
@@ -184,12 +189,10 @@ public class DefaultLevel {
             levelStatus = LevelStatus.PASSED;
             gameField.setNewFieldElementCode(heroRow, heroCol, "hero:exit");
         }
-        else if(currentCode.equals("death")) {
+        else {
             levelStatus = LevelStatus.FAILED;
             gameField.setNewFieldElementCode(heroRow, heroCol, "hero:death");
         }
-        else {
-            //TODO има ли нужда
-        }
+
     }
 }

@@ -52,6 +52,7 @@ public class EasyLevel extends DefaultLevel {
     public void showGameFieldToUser() {
         super.showGameFieldToUser();
     }
+
     public void generateLevel() throws FailedGeneratingLevelException {
         super.generateLevel();
         try {

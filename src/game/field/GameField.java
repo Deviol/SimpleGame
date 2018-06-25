@@ -86,12 +86,9 @@ public class GameField {
                 System.out.print("H->E");
                 break;
             }
-            case "death": {
+            default: {
                 System.out.print("H->D");
                 break;
-            }
-            default: {
-                // TODO
             }
         }
     }
@@ -105,12 +102,9 @@ public class GameField {
                 System.out.print("E");
                 break;
             }
-            case "death": {
+            default: {
                 System.out.print("D");
                 break;
-            }
-            default: {
-                // TODO
             }
         }
     }
@@ -122,6 +116,5 @@ public class GameField {
                 field[MAX_LENGTH_OF_FIELD * i + j] = new FieldElement();
             }
         }
-        //TODO put hero at 7,7
     }
 }

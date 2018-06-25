@@ -69,6 +69,31 @@ public class HardLevel extends DefaultLevel {
         super.activateSpell();
     }
 
+    public void generateLevel() throws FailedGeneratingLevelException {
+        super.generateLevel();
+        try {
+            super.generateElementAt(5, 4, "death");
+            super.generateElementAt(3, 12, "death");
+            super.generateElementAt(7, 10, "death");
+            super.generateElementAt(5, 11, "spell:InfernoSpell");
+            for (int i = 4; i < 12; i++) {
+                super.generateElementAt(i, 5, "spell:InfernoSpell");
+            }
+        }
+        catch(FailedGeneratingElementException e) {
+            System.out.println(e);
+            throw new FailedGeneratingLevelException();
+        }
+    }
+
+    public LevelStatus getLevelStatus() {
+        return super.getLevelStatus();
+    }
+
+    public void showGameFieldToUser() {
+        super.showGameFieldToUser();
+    }
+
     private boolean isForbiddenDirection(HeroDirection direction) {
         return direction == firstForbiddenDirection ||
             direction == secondForbiddenDirection;
@@ -91,26 +116,6 @@ public class HardLevel extends DefaultLevel {
 
     }
 
-    public void generateLevel() throws FailedGeneratingLevelException {
-        super.generateLevel();
-        try {
-            super.generateElementAt(5, 4, "death");
-            super.generateElementAt(3, 12, "death");
-            super.generateElementAt(7, 10, "death");
-            super.generateElementAt(5, 11, "spell:InfernoSpell");
-            for (int i = 4; i < 12; i++) {
-                super.generateElementAt(i, 5, "spell:InfernoSpell");
-            }
-        }
-        catch(FailedGeneratingElementException e) {
-            System.out.println(e);
-            throw new FailedGeneratingLevelException();
-        }
-    }
-
-    public LevelStatus getLevelStatus() {
-        return super.getLevelStatus();
-    }
     private void makingMoveBasedOnAllowedSteps(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
         if(numberOfAllowedSteps > 0) {
@@ -121,10 +126,6 @@ public class HardLevel extends DefaultLevel {
         else {
             super.setLevelStatus(LevelStatus.FAILED);
         }
-    }
-
-    public void showGameFieldToUser() {
-        super.showGameFieldToUser();
     }
 
     private void movingTo(HeroDirection direction)
