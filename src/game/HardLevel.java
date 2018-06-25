@@ -1,9 +1,6 @@
 package game;
 
-import game.exceptions.FailedGeneratingElementException;
-import game.exceptions.ForbiddenDirectionException;
-import game.exceptions.HeroStepOutOfGameFieldBoundsException;
-import game.exceptions.NoSpellFoundException;
+import game.exceptions.*;
 
 public class HardLevel extends DefaultLevel{
 
@@ -91,7 +88,7 @@ public class HardLevel extends DefaultLevel{
 
     }
 
-    public void generateLevel() {
+    public void generateLevel() throws FailedGeneratingLevelException {
         super.generateLevel();
         try {
             super.generateElementAt(5, 4, "death");
@@ -103,7 +100,8 @@ public class HardLevel extends DefaultLevel{
             }
         }
         catch(FailedGeneratingElementException e) {
-            //TODO throw another exception
+            System.out.println(e);
+            throw new FailedGeneratingLevelException();
         }
     }
 

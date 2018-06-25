@@ -1,9 +1,6 @@
 package game;
 
-import game.exceptions.FailedGeneratingElementException;
-import game.exceptions.ForbiddenDirectionException;
-import game.exceptions.HeroStepOutOfGameFieldBoundsException;
-import game.exceptions.NoSpellFoundException;
+import game.exceptions.*;
 
 public class DefaultLevel {
 
@@ -88,15 +85,15 @@ public class DefaultLevel {
         }
     }
 
-    public void generateLevel() {
+    public void generateLevel() throws FailedGeneratingLevelException{
         try {
             generateElementAt(2, 3, "spell:InfernoSpell");
             generateElementAt(4, 9, "exit");
             generateElementAt(14, 5, "death");
             generateElementAt(13, 13, "exit");
         } catch (FailedGeneratingElementException e) {
-            //TODO fix
-            System.out.println("invalid operation");
+            System.out.println(e);
+            throw new FailedGeneratingLevelException();
         }
 
     }
