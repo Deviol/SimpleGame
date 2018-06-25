@@ -77,7 +77,8 @@ public class DefaultLevel {
         String spellCode = gameField.getFieldElementCodeAt(heroRow, heroCol);
         String[] spellParts = spellCode.split(":");
         if(spellParts.length == 3 && spellParts[1].equals("spell")) {
-            Spell currentSpell = SpellFactory.getAppropriateSpell(spellParts[2], gameField, hero);
+            CustomGameField customGameField = new CustomGameField(gameField);
+            Spell currentSpell = SpellFactory.getAppropriateSpell(spellParts[2], customGameField, hero);
             currentSpell.activateSpecialEffectOnField();
             currentSpell.activateSpecialEffectOnHero(); //fix
             gameField.setNewFieldElementCode(heroRow, heroCol, "hero");

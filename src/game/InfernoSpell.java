@@ -1,28 +1,29 @@
 package game;
 
+import game.exceptions.InvalidSectorException;
+
 public class InfernoSpell implements Spell{
 
-    private GameField gameField;
+    private CustomGameField gameField;
     private Hero hero;
 
-    public InfernoSpell(GameField gameField, Hero hero) {
+    public InfernoSpell(CustomGameField gameField, Hero hero) {
         this.gameField = gameField;
         this.hero = hero;
     }
 
     @Override
     public void activateSpecialEffectOnField() {
-        gameField.revealSectorOfFieldElements(4, 7, 1, 5 );
-        gameField.setNewFieldElementCode(13, 1, "exit");
-        boolean isHeroOnMoreThan75PercentsHealth = hero.getHealth() > hero.getMaxHealth() * 0.75;
-        if(isHeroOnMoreThan75PercentsHealth) {
-            gameField.setNewFieldElementCode(12, 11, "death");
-            gameField.setNewFieldElementCode(6, 8, "death");
+        try {
+            gameField.revealSectorOfFieldElements(4, 7, 1, 5 );
+            boolean isHeroOnMoreThan75PercentsHealth = hero.getHealth() > hero.getMaxHealth() * 0.75;
+            if(isHeroOnMoreThan75PercentsHealth) {
+                gameField.revealSectorOfFieldElements(5, 1, 3, 12 );
+            }
+        } catch(InvalidSectorException e) {
+            System.out.println(e);
         }
-        else {
-            gameField.setNewFieldElementCode(12, 11, "spell:InfernoSpell");
-            gameField.setNewFieldElementCode(6, 8, "spell:InfernoSpell");
-        }
+
     }
 
     @Override
@@ -31,7 +32,6 @@ public class InfernoSpell implements Spell{
         boolean isHeroOnLessThanHalfHealth = hero.getHealth() < hero.getMaxHealth() / 2;
         if(isHeroOnLessThanHalfHealth) {
             hero.increaseHealthWith(25);
-            gameField.setNewFieldElementCode(8, 8, "death");
         }
     }
 }

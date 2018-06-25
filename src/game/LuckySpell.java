@@ -1,20 +1,25 @@
 package game;
 
+import game.exceptions.InvalidSectorException;
+
 public class LuckySpell implements Spell{
 
-    private GameField gameField;
+    private CustomGameField gameField;
     private Hero hero;
 
-    public LuckySpell(GameField gameField, Hero hero) {
+    public LuckySpell(CustomGameField gameField, Hero hero) {
         this.gameField = gameField;
         this.hero = hero;
     }
 
     @Override
     public void activateSpecialEffectOnField() {
-        for (int i = 3; i < 8; i++) {
-            gameField.setNewFieldElementCode(3, i, "exit");
+        try {
+            gameField.revealSectorOfFieldElements(3, 8, 13, 5 );
+        } catch (InvalidSectorException e) {
+            System.out.println(e);
         }
+
     }
 
     @Override

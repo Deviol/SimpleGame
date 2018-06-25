@@ -2,7 +2,7 @@ package game;
 
 public class SpellFactory {
 
-    public static Spell getAppropriateSpell(String type, GameField gameField, Hero hero) {
+    public static Spell getAppropriateSpell(String type, CustomGameField gameField, Hero hero) {
         if(type.equals("InfernoSpell")) {
             return new InfernoSpell(gameField, hero);
         }
