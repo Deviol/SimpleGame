@@ -123,7 +123,7 @@ public class HardLevel extends DefaultLevel{
     public void showGameFieldToUser() {
         super.showGameFieldToUser();
     }
-    
+
     private void movingTo(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
         switch (direction) {
