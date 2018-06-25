@@ -85,9 +85,18 @@ public class ExceptionsTests {
 
     @Test
     public void testFailedGeneratingElementExceptionCaseInvalidIndex() {
-        failedGeneratingElementException = new FailedGeneratingElementException(3, 15, "spell:Inferno");
+        failedGeneratingElementException =
+            new FailedGeneratingElementException(3, 15, "spell:Inferno");
         String message = "Column index \"15\" is not valid!";
         String exceptionMessage = failedGeneratingElementException.toString();
+
+        Assert.assertTrue(message.equals(exceptionMessage));
+    }
+
+    @Test
+    public void testFailedGeneratingLevelException() {
+        String message = "Failed to generate level because of level's Author error!";
+        String exceptionMessage = failedGeneratingLevelException.toString();
 
         Assert.assertTrue(message.equals(exceptionMessage));
     }

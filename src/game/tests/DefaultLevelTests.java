@@ -1,7 +1,7 @@
 package game.tests;
 import game.exceptions.*;
 import game.hero.Hero;
-import game.levels.DefaultLevel;
+import game.defaultlevel.DefaultLevel;
 import org.junit.Before;
 import org.junit.Test;
 

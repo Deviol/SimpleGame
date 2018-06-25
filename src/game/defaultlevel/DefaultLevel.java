@@ -1,4 +1,4 @@
-package game.levels;
+package game.defaultlevel;
 
 import game.enums.FieldElementStatus;
 import game.enums.HeroDirection;
@@ -132,19 +132,19 @@ public class DefaultLevel {
         return levelStatus;
     }
 
-    public void setLevelStatus(LevelStatus levelStatus) {
+    protected void setLevelStatus(LevelStatus levelStatus) {
         this.levelStatus = levelStatus;
     }
 
-    public int getHeroHealth() {
+    protected int getHeroHealth() {
         return hero.getHealth();
     }
 
-    public int getHeroMaxHealth() {
+    protected int getHeroMaxHealth() {
         return hero.getMaxHealth();
     }
 
-    public void increaseHeroHealthBy(int health) {
+    protected void increaseHeroHealthBy(int health) {
         hero.increaseHealthWith(health);
     }
 

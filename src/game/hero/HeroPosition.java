@@ -15,22 +15,6 @@ public class HeroPosition {
         this.columnIndex = DEFAULT_INDEX_OF_HERO_POSITION;
     }
 
-    protected void incrementRowIndexByOne() {
-        rowIndex++;
-    }
-
-    protected void decrementRowIndexByOne() {
-        rowIndex--;
-    }
-
-    protected void incrementColumnIndexByOne() {
-        columnIndex++;
-    }
-
-    protected void decrementColumnIndexByOne() {
-        columnIndex--;
-    }
-
     public int getRowIndex() {
         return rowIndex;
     }
@@ -38,22 +22,23 @@ public class HeroPosition {
     public int getColumnIndex() {
         return columnIndex;
     }
+
     public void updateHeroPosition(HeroDirection direction) {
         switch (direction) {
             case UP: {
-                decrementRowIndexByOne();
+                rowIndex--;
                 break;
             }
             case DOWN: {
-                incrementRowIndexByOne();
+                rowIndex++;
                 break;
             }
             case LEFT: {
-                decrementColumnIndexByOne();
+                columnIndex--;
                 break;
             }
             default: {
-                incrementColumnIndexByOne();
+                columnIndex++;
                 break;
             }
         }

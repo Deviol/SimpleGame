@@ -1,5 +1,6 @@
 package game.levels;
 
+import game.defaultlevel.DefaultLevel;
 import game.hero.Hero;
 import game.enums.HeroDirection;
 import game.exceptions.*;
