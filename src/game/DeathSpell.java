@@ -18,7 +18,7 @@ public class DeathSpell implements Spell{
         int heroRow = heroPosition.getKey();
         int heroCol = heroPosition.getValue();
         surroundHeroWithDeathOnAllDirectionButLEFT(heroRow, heroCol);
-
+        gameField.revealSectorOfFieldElements(0, 1, 10, 13);
     }
 
     @Override
