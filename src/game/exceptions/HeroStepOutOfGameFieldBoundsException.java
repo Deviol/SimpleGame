@@ -5,6 +5,7 @@ import game.enums.IndexType;
 public class HeroStepOutOfGameFieldBoundsException extends Exception{
 
     private int index;
+
     private IndexType indexType;
 
     public HeroStepOutOfGameFieldBoundsException(int index, IndexType indexType) {

@@ -3,7 +3,9 @@ package game.field;
 import game.enums.FieldElementStatus;
 
 public class GameField {
+
     private FieldElement[] field;
+
     public static final int MAX_LENGTH_OF_FIELD = 15;
 
     public GameField() {

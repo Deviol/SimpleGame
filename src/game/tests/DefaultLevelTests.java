@@ -1,8 +1,5 @@
 package game.tests;
-import game.exceptions.FailedGeneratingElementException;
-import game.exceptions.ForbiddenDirectionException;
-import game.exceptions.HeroStepOutOfGameFieldBoundsException;
-import game.exceptions.NoSpellFoundException;
+import game.exceptions.*;
 import game.hero.Hero;
 import game.levels.DefaultLevel;
 import org.junit.Before;
@@ -91,7 +88,8 @@ public class DefaultLevelTests {
     }
 
     @Test(expected = Test.None.class)
-    public void testActivateSpellShouldCreateSpell() throws NoSpellFoundException {
+    public void testActivateSpellShouldCreateSpell() throws NoSpellFoundException,
+        FailedGeneratingLevelException {
         boolean isHeroOnSpell = true;
         defaultLevel.generateLevel();
         setHeroPositionOnTestingPosition(isHeroOnSpell);
@@ -99,7 +97,8 @@ public class DefaultLevelTests {
     }
 
     @Test(expected = NoSpellFoundException.class)
-    public void testActivateSpellShouldThrowException() throws NoSpellFoundException{
+    public void testActivateSpellShouldThrowException() throws NoSpellFoundException,
+        FailedGeneratingLevelException {
         boolean isHeroOnSpell = false;
         defaultLevel.generateLevel();
         setHeroPositionOnTestingPosition(isHeroOnSpell);

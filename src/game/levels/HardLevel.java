@@ -8,9 +8,13 @@ import game.exceptions.*;
 public class HardLevel extends DefaultLevel {
 
     private HeroDirection firstForbiddenDirection;
+
     private HeroDirection secondForbiddenDirection;
+
     private int numberOfAllowedSteps;
+
     private int healthCostForPlaying;
+
     private int additionalHealthForEachStep;
 
     public HardLevel(Hero hero, HeroDirection firstForbiddenDirection,

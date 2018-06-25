@@ -5,8 +5,11 @@ import game.field.GameField;
 public class InvalidSectorException extends Exception {
 
     private int fromRowIndex;
+
     private int toRowIndex;
+
     private int fromColumnIndex;
+
     private int toColumnIndex;
 
     public InvalidSectorException(int fromRowIndex, int toRowIndex,

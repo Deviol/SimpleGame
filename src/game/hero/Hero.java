@@ -1,7 +1,9 @@
 package game.hero;
 
 public class Hero {
+
     private int health;
+
     private int maxHealth;
 
     public Hero(int maxHealth) {

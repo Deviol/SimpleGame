@@ -5,7 +5,9 @@ import game.field.GameField;
 public class FailedGeneratingElementException extends Exception {
 
     private int rowIndex;
+
     private int columnIndex;
+
     private String elementCode;
 
     public FailedGeneratingElementException(int rowIndex, int columnIndex, String elementCode) {
@@ -30,6 +32,7 @@ public class FailedGeneratingElementException extends Exception {
         else {
             result = "Element code \"" + elementCode + "\" is not a valid code";
         }
+
         return result;
     }
 }

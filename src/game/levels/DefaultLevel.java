@@ -15,8 +15,11 @@ import game.spells.SpellFactory;
 public class DefaultLevel {
 
     private GameField gameField;
+
     private Hero hero;
+
     private HeroPosition heroPosition;
+
     private LevelStatus levelStatus;
 
     public DefaultLevel(Hero hero) {
@@ -120,7 +123,7 @@ public class DefaultLevel {
             throw new FailedGeneratingElementException(row, col , newCode);
         }
     }
-    
+
     public void showGameFieldToUser() {
         gameField.printGameFieldForUserView();
     }

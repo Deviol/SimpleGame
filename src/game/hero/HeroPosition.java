@@ -3,9 +3,12 @@ package game.hero;
 import game.enums.HeroDirection;
 
 public class HeroPosition {
-    public final static int DEFAULT_INDEX_OF_HERO_POSITION = 7;
+
     private int rowIndex;
+
     private int columnIndex;
+
+    public final static int DEFAULT_INDEX_OF_HERO_POSITION = 7;
 
     public HeroPosition() {
         this.rowIndex = DEFAULT_INDEX_OF_HERO_POSITION;

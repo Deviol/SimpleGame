@@ -18,6 +18,7 @@ public class EasyLevel extends DefaultLevel {
         if(forbiddenDirection == HeroDirection.LEFT) {
             throw new ForbiddenDirectionException(HeroDirection.LEFT);
         }
+
         super.movingLeft();
     }
 
@@ -26,6 +27,7 @@ public class EasyLevel extends DefaultLevel {
         if(forbiddenDirection == HeroDirection.RIGHT) {
             throw new ForbiddenDirectionException(HeroDirection.RIGHT);
         }
+
         super.movingRight();
     }
 
@@ -34,6 +36,7 @@ public class EasyLevel extends DefaultLevel {
         if(forbiddenDirection == HeroDirection.UP) {
             throw new ForbiddenDirectionException(HeroDirection.UP);
         }
+
         super.movingUp();
     }
 
@@ -42,6 +45,7 @@ public class EasyLevel extends DefaultLevel {
         if(forbiddenDirection == HeroDirection.DOWN) {
             throw new ForbiddenDirectionException(HeroDirection.DOWN);
         }
+
         super.movingDown();
     }
 

@@ -10,6 +10,7 @@ import org.junit.Test;
 public class HeroTests {
 
     private Hero hero;
+
     private HeroPosition heroPosition;
 
     @Before

@@ -14,6 +14,7 @@ public class ForbiddenDirectionException extends Exception{
     public String toString() {
         String direction = String.valueOf(heroDirection).toLowerCase();
         String message = "Moving " + direction + " is not allowed!";
+
         return message;
     }
 }

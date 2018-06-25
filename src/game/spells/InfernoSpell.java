@@ -7,6 +7,7 @@ import game.exceptions.InvalidSectorException;
 public class InfernoSpell implements Spell {
 
     private CustomGameField gameField;
+
     private Hero hero;
 
     public InfernoSpell(CustomGameField gameField, Hero hero) {

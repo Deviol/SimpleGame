@@ -3,7 +3,9 @@ package game.field;
 import game.enums.FieldElementStatus;
 
 public class FieldElement {
+
     private FieldElementStatus status;
+
     private String code;
 
     public FieldElement(String code) {
@@ -15,6 +17,7 @@ public class FieldElement {
         status = FieldElementStatus.HIDDEN;
         code = "empty";
     }
+
     public FieldElementStatus getStatus() {
         return status;
     }

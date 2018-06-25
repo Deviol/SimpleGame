@@ -14,8 +14,10 @@ public class NoSpellFoundException extends Exception{
     public String toString() {
         String heroRowMessage = String.valueOf(heroPosition.getRowIndex());
         String heroColMessage = String.valueOf(heroPosition.getColumnIndex());
+
         String message = "There is no spell at position ("
             + heroRowMessage + ", " + heroColMessage + ")!";
+
         return message;
     }
 }

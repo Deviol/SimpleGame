@@ -13,7 +13,9 @@ import org.junit.Test;
 public class HardLevelTests {
 
     private HardLevel hardLevel;
+
     private int numberOfAllowedSteps;
+
     private Hero hero;
 
     @Before

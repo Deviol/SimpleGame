@@ -5,6 +5,7 @@ import game.exceptions.InvalidSectorException;
 public class CustomGameField {
 
     private GameField gameField;
+
     public CustomGameField(GameField gameField) {
         this.gameField = gameField;
     }
