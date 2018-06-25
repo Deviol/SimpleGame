@@ -12,11 +12,13 @@ public class LuckySpell implements Spell{
 
     @Override
     public void activateSpecialEffectOnField() {
-
+        for (int i = 3; i < 8; i++) {
+            gameField.setNewFieldElementCode(3, i, "exit");
+        }
     }
 
     @Override
-    public void activateSpecialEffectOnHero(int coolDown) {
-
+    public void activateSpecialEffectOnHero() {
+        hero.increaseHealthWith(50);
     }
 }
