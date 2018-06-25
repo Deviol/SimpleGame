@@ -33,8 +33,14 @@ public class GameField {
         return isColumnIndexInBounds && isRowIndexInBounds;
     }
 
-    public void setSectorOfFieldElements(int fromRow, int toRow, int fromCol, int toCol) {
-
+    public void revealSectorOfFieldElements(int fromRow, int toRow, int fromCol, int toCol) {
+        if(isMovingSafeAt(fromRow, fromCol) && isMovingSafeAt(toRow, toCol)) {
+            for (int i = fromRow; i < toRow; i++) {
+                for (int j = fromCol; j < toCol; j++) {
+                    field[MAX_LENGTH_OF_FIELD * i + j].setStatus(FieldElementStatus.REVEALED);
+                }
+            }
+        }
     }
 
     private void initializeField() {
