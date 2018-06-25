@@ -110,7 +110,9 @@ public class DefaultLevel {
             throw new FailedGeneratingElementException(row, col , newCode);
         }
     }
-
+    public void showGameFieldToUser() {
+        gameField.printGameFieldForUserView();
+    }
     public LevelStatus getLevelStatus() {
         return levelStatus;
     }

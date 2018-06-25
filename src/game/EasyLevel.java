@@ -1,9 +1,6 @@
 package game;
 
-import game.exceptions.FailedGeneratingElementException;
-import game.exceptions.ForbiddenDirectionException;
-import game.exceptions.HeroStepOutOfGameFieldBoundsException;
-import game.exceptions.NoSpellFoundException;
+import game.exceptions.*;
 
 public class EasyLevel extends DefaultLevel{
 
@@ -50,7 +47,10 @@ public class EasyLevel extends DefaultLevel{
         super.activateSpell();
     }
 
-    public void generateLevel() {
+    public void showGameFieldToUser() {
+        super.showGameFieldToUser();
+    }
+    public void generateLevel() throws FailedGeneratingLevelException {
         super.generateLevel();
         try {
             super.generateElementAt(2, 1, "spell:LuckySpell");
@@ -58,7 +58,8 @@ public class EasyLevel extends DefaultLevel{
             super.generateElementAt(5, 5, "spell:LuckySpell");
             super.generateElementAt(7, 11, "exit");
         } catch(FailedGeneratingElementException e) {
-            //TODO throw another exception
+            System.out.println(e);
+            throw new FailedGeneratingLevelException();
         }
     }
 }
