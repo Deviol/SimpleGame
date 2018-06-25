@@ -10,11 +10,10 @@ public class SpellFactory {
             return new LuckySpell(gameField, hero);
         }
         else if(type.equals("DeathSpell")) {
-            return new LuckySpell(gameField, hero);
+            return new DeathSpell(gameField, hero);
         }
         else {
-            //TODO invalid spell handle it
-            return new LuckySpell(gameField, hero);
+            return new InfernoSpell(gameField, hero);
         }
     }
 }

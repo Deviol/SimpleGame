@@ -4,6 +4,10 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Random;
 
+/**
+Not refactor, not test, and not correct at this stage of development
+Should not be used!
+ */
 public class Game {
 
     private Hero hero;
