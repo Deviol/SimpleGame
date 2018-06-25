@@ -74,7 +74,7 @@ public class DefaultLevel {
         if(spellParts.length == 3 && spellParts[1].equals("spell")) {
             Spell currentSpell = SpellFactory.getAppropriateSpell(spellParts[2], gameField, hero);
             currentSpell.activateSpecialEffectOnField();
-            currentSpell.activateSpecialEffectOnHero(5); //fix
+            currentSpell.activateSpecialEffectOnHero(); //fix
             gameField.setNewFieldElementCode(heroRow, heroCol, "hero");
         }
         else {
