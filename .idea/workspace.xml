@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/levels/DefaultLevel.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Game.java" afterPath="$PROJECT_DIR$/src/game/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/hero/HeroPosition.java" afterPath="$PROJECT_DIR$/src/game/hero/HeroPosition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/levels/EasyLevel.java" afterPath="$PROJECT_DIR$/src/game/levels/EasyLevel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/levels/HardLevel.java" afterPath="$PROJECT_DIR$/src/game/levels/HardLevel.java" />
@@ -882,7 +883,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="1380" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
