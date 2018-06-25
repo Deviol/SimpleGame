@@ -1,5 +1,10 @@
 package game;
 
+import game.exceptions.FailedGeneratingElementException;
+import game.exceptions.ForbiddenDirectionException;
+import game.exceptions.HeroStepOutOfGameFieldBoundsException;
+import game.exceptions.NoSpellFoundException;
+
 public class DefaultLevel {
 
     private GameField gameField;
@@ -15,7 +20,7 @@ public class DefaultLevel {
     }
 
     public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
-        ForbiddenDirectionException {
+            ForbiddenDirectionException {
         boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.LEFT);
         if(isMovingSafe) {
             makeOldStepUsed();

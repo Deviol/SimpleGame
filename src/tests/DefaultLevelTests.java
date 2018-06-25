@@ -1,5 +1,9 @@
 package tests;
 import game.*;
+import game.exceptions.FailedGeneratingElementException;
+import game.exceptions.ForbiddenDirectionException;
+import game.exceptions.HeroStepOutOfGameFieldBoundsException;
+import game.exceptions.NoSpellFoundException;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,7 +20,7 @@ public class DefaultLevelTests {
 
     @Test(expected = HeroStepOutOfGameFieldBoundsException.class)
     public void testMovingLeftShouldThrowException() throws HeroStepOutOfGameFieldBoundsException,
-        ForbiddenDirectionException {
+            ForbiddenDirectionException {
         int numberOfSteps = 8;
         for (int step = 0; step < numberOfSteps; step++) {
             defaultLevel.movingLeft();
@@ -86,7 +90,7 @@ public class DefaultLevelTests {
     }
 
     @Test(expected = Test.None.class)
-    public void testActivateSpellShouldCreateSpell() throws NoSpellFoundException{
+    public void testActivateSpellShouldCreateSpell() throws NoSpellFoundException {
         boolean isHeroOnSpell = true;
         defaultLevel.generateLevel();
         setHeroPositionOnTestingPosition(isHeroOnSpell);

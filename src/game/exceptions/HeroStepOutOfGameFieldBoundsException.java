@@ -1,4 +1,6 @@
-package game;
+package game.exceptions;
+
+import game.IndexType;
 
 public class HeroStepOutOfGameFieldBoundsException extends Exception{
 

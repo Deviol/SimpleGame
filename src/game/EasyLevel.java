@@ -1,5 +1,10 @@
 package game;
 
+import game.exceptions.FailedGeneratingElementException;
+import game.exceptions.ForbiddenDirectionException;
+import game.exceptions.HeroStepOutOfGameFieldBoundsException;
+import game.exceptions.NoSpellFoundException;
+
 public class EasyLevel extends DefaultLevel{
 
     private HeroDirection forbiddenDirection;
@@ -10,7 +15,7 @@ public class EasyLevel extends DefaultLevel{
     }
 
     public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
-        ForbiddenDirectionException {
+            ForbiddenDirectionException {
         if(forbiddenDirection == HeroDirection.LEFT) {
             throw new ForbiddenDirectionException(HeroDirection.LEFT);
         }

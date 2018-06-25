@@ -1,4 +1,6 @@
-package game;
+package game.exceptions;
+
+import game.HeroDirection;
 
 public class ForbiddenDirectionException extends Exception{
 

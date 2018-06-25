@@ -1,6 +1,8 @@
 package tests;
 
 import game.*;
+import game.exceptions.ForbiddenDirectionException;
+import game.exceptions.HeroStepOutOfGameFieldBoundsException;
 import org.junit.Before;
 import org.junit.Test;
 

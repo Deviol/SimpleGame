@@ -1,4 +1,6 @@
-package game;
+package game.exceptions;
+
+import game.GameField;
 
 public class FailedGeneratingElementException extends Exception {
 

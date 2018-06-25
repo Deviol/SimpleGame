@@ -1,5 +1,10 @@
 package game;
 
+import game.exceptions.FailedGeneratingElementException;
+import game.exceptions.ForbiddenDirectionException;
+import game.exceptions.HeroStepOutOfGameFieldBoundsException;
+import game.exceptions.NoSpellFoundException;
+
 public class HardLevel extends DefaultLevel{
 
     private HeroDirection firstForbiddenDirection;
