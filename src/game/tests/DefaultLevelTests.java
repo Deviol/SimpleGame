@@ -1,4 +1,4 @@
-package tests;
+package game.tests;
 import game.*;
 import game.exceptions.FailedGeneratingElementException;
 import game.exceptions.ForbiddenDirectionException;

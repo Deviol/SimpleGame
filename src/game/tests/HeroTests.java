@@ -1,4 +1,4 @@
-package tests;
+package game.tests;
 
 import game.Hero;
 import game.HeroDirection;
