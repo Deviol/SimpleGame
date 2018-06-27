@@ -61,7 +61,7 @@ public class DefaultLevel {
         //Always of length 3
         String[] spellParts = spellCode.split(":");
 
-        if(spellParts.length == 3 && spellParts[1].equals("spell")) {
+        if (spellParts.length == 3 && spellParts[1].equals("spell")) {
             CustomGameField customGameField = new CustomGameField(gameField);
             Spell currentSpell = SpellFactory.getAppropriateSpell(spellParts[2], customGameField, hero);
 
@@ -107,7 +107,7 @@ public class DefaultLevel {
         boolean isNewCodeValid = newCode.startsWith("spell:") ||
             newCode.equals("exit") || newCode.equals("death");
         boolean isPositionValid = gameField.isMovingSafeAt(row, col);
-        if(isNewCodeValid && isPositionValid) {
+        if (isNewCodeValid && isPositionValid) {
             gameField.setNewFieldElementCode(row, col, newCode);
         }
         else {
@@ -209,14 +209,14 @@ public class DefaultLevel {
         int heroCol = heroPosition.getColumnIndex();
         gameField.setFieldElementStatusAt(heroRow, heroCol, FieldElementStatus.REVEALED);
         String currentCode = gameField.getFieldElementCodeAt(heroRow, heroCol);
-        if(currentCode.equals("empty")) {
+        if (currentCode.equals("empty")) {
             gameField.setNewFieldElementCode(heroRow, heroCol, "hero");
         }
-        else if(currentCode.contains("spell:")) {
+        else if (currentCode.contains("spell:")) {
             String newCode = "hero:" + gameField.getFieldElementCodeAt(heroRow, heroCol);
             gameField.setNewFieldElementCode(heroRow, heroCol, newCode);
         }
-        else if(currentCode.equals("exit")) {
+        else if (currentCode.equals("exit")) {
             levelStatus = LevelStatus.PASSED;
             gameField.setNewFieldElementCode(heroRow, heroCol, "hero:exit");
         }

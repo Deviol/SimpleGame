@@ -15,10 +15,10 @@ public class Hero {
      * @param health additional health
      */
     public void increaseHealthWith(int health) {
-        if(health < 0) {
+        if (health < 0) {
             health = 0;
         }
-        if(this.health + health < maxHealth) {
+        if (this.health + health < maxHealth) {
             this.health += health;
         }
         else {
@@ -31,10 +31,10 @@ public class Hero {
      * @param health health to take
      */
     public void decreaseHealthWith(int health) {
-        if(health < 0) {
+        if (health < 0) {
             health = 0;
         }
-        if(this.health - health >= 0) {
+        if (this.health - health >= 0) {
             this.health -= health;
         }
         else {

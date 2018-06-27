@@ -5,7 +5,6 @@ import game.exceptions.*;
 import game.hero.HeroPosition;
 import org.junit.Assert;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class ExceptionsTests {

@@ -37,7 +37,7 @@ public class HardLevel extends DefaultLevel {
     public void movingTo(HeroDirection direction) throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
         boolean isForbiddenDirection = isForbiddenDirection(direction);
-        if(isForbiddenDirection) {
+        if (isForbiddenDirection) {
             throw new ForbiddenDirectionException(direction);
         }
         updateAdditionalHealthForEachStepIfNecessary();
@@ -101,11 +101,11 @@ public class HardLevel extends DefaultLevel {
         boolean isHeroOnLessThanHalfHealth = heroHealth < heroMaxHealth / 2;
         boolean isHeroOnLessThanQuarterHealth = heroHealth < heroMaxHealth / 4;
 
-        if(isHeroOnLessThanQuarterHealth) {
+        if (isHeroOnLessThanQuarterHealth) {
             additionalHealthForEachStep = 2;
         }
 
-        if(isHeroOnLessThanHalfHealth) {
+        if (isHeroOnLessThanHalfHealth) {
             additionalHealthForEachStep = 1;
         }
 
@@ -113,7 +113,7 @@ public class HardLevel extends DefaultLevel {
 
     private void makingMoveBasedOnAllowedSteps(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
-        if(numberOfAllowedSteps > 0) {
+        if (numberOfAllowedSteps > 0) {
             moving(direction);
             numberOfAllowedSteps--;
             super.increaseHeroHealthBy(additionalHealthForEachStep);

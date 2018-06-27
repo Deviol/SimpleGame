@@ -42,13 +42,13 @@ public class InvalidSectorException extends Exception {
                 toColumnIndex < 0 || GameField.MAX_LENGTH_OF_FIELD <= toColumnIndex;
 
         String result;
-        if(isFromRowIndexInvalid) {
+        if (isFromRowIndexInvalid) {
             result = "fromRow: \"" + fromRowIndex + "\" ";
         }
-        else if(isToRowIndexInvalid) {
+        else if (isToRowIndexInvalid) {
             result = "toRow: \"" + toRowIndex + "\" ";
         }
-        else if(isFromColumnIndexInvalid) {
+        else if (isFromColumnIndexInvalid) {
             result = "fromCol: \"" + fromColumnIndex + "\" ";
         }
         else {

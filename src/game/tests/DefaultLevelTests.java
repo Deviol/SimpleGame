@@ -9,6 +9,7 @@ import org.junit.Test;
 public class DefaultLevelTests {
 
     private DefaultLevel defaultLevel;
+    private HeroDirection heroDirection;
 
     @Before
     public void initializeDefaultLevel() {
@@ -141,7 +142,7 @@ public class DefaultLevelTests {
     private void setHeroPositionOnTestingPosition(boolean isHeroOnSpell) {
         int numberOfUpSteps;
         int numberOfLeftSteps;
-        if(isHeroOnSpell) {
+        if (isHeroOnSpell) {
             numberOfUpSteps = 5;
             numberOfLeftSteps = 4;
         }

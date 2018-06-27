@@ -27,7 +27,7 @@ public class CustomGameField {
         throws InvalidSectorException {
         boolean isSectorValid = gameField.isMovingSafeAt(fromRow,toRow) &&
             gameField.isMovingSafeAt(fromCol, toCol);
-        if(isSectorValid) {
+        if (isSectorValid) {
             gameField.revealSectorOfFieldElements(fromRow, toRow, fromCol, toCol);
         }
         else {

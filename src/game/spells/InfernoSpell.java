@@ -21,7 +21,7 @@ public class InfernoSpell implements Spell {
         try {
             gameField.revealSectorOfFieldElements(4, 7, 1, 5 );
             boolean isHeroOnMoreThan75PercentsHealth = hero.getHealth() > hero.getMaxHealth() * 0.75;
-            if(isHeroOnMoreThan75PercentsHealth) {
+            if (isHeroOnMoreThan75PercentsHealth) {
                 gameField.revealSectorOfFieldElements(5, 1, 3, 12 );
             }
         } catch(InvalidSectorException e) {
@@ -37,7 +37,7 @@ public class InfernoSpell implements Spell {
     public void activateSpecialEffectOnHero() {
         hero.decreaseHealthWith(10);
         boolean isHeroOnLessThanHalfHealth = hero.getHealth() < hero.getMaxHealth() / 2;
-        if(isHeroOnLessThanHalfHealth) {
+        if (isHeroOnLessThanHalfHealth) {
             hero.increaseHealthWith(25);
         }
     }
