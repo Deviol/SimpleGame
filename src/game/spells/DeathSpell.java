@@ -6,7 +6,6 @@ import game.hero.Hero;
 public class DeathSpell implements Spell {
 
     private CustomGameField gameField;
-
     private Hero hero;
 
     public DeathSpell(CustomGameField gameField, Hero hero) {

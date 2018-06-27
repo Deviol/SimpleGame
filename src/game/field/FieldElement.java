@@ -8,7 +8,6 @@ import game.enums.FieldElementStatus;
 public class FieldElement {
 
     private FieldElementStatus status;
-
     private String code;
 
     public FieldElement(String code) {
