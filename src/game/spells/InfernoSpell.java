@@ -14,7 +14,9 @@ public class InfernoSpell implements Spell {
         this.gameField = gameField;
         this.hero = hero;
     }
-
+    /**
+     * Applying the spell effect on the field cells
+     */
     @Override
     public void activateSpecialEffectOnField() {
         try {
@@ -29,6 +31,9 @@ public class InfernoSpell implements Spell {
 
     }
 
+    /**
+     * Applying the spell effect on hero's health
+     */
     @Override
     public void activateSpecialEffectOnHero() {
         hero.decreaseHealthWith(10);

@@ -14,6 +14,14 @@ public class EasyLevel extends DefaultLevel {
         this.forbiddenDirection = forbiddenDirection;
     }
 
+    /**
+     * Moving hero on the field
+     * @param direction Direction where the hero should move
+     * @throws HeroStepOutOfGameFieldBoundsException If passing a direction leads to step off the field
+     * the current exception is thrown
+     * @throws ForbiddenDirectionException It is thrown when the
+     * the forbidden directions is passed.
+     */
     public void movingTo(HeroDirection direction) throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
         if(forbiddenDirection == direction) {
@@ -23,14 +31,27 @@ public class EasyLevel extends DefaultLevel {
         super.movingTo(direction);
     }
 
+    /**
+     * Creates a spell and activates its effect
+     * @throws NoSpellFoundException Hero stepping on non spell cell and user typing the command for
+     * activating the spell will cause the current exception to be thrown
+     */
     public void activateSpell() throws NoSpellFoundException {
         super.activateSpell();
     }
 
+    /**
+     * Printing the game field to the standard output
+     */
     public void showGameFieldToUser() {
         super.showGameFieldToUser();
     }
 
+    /**
+     * Putting game defined element on the field
+     * @throws FailedGeneratingLevelException When one of the inner generating methods fails
+     * the current exception is thrown
+     */
     public void generateLevel() throws FailedGeneratingLevelException {
         super.generateLevel();
         try {

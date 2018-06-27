@@ -14,11 +14,17 @@ public class DeathSpell implements Spell {
         this.hero = hero;
     }
 
+    /**
+     * Applying the spell effect on the field cells
+     */
     @Override
     public void activateSpecialEffectOnField() {
 
     }
 
+    /**
+     * Applying the spell effect on hero's health
+     */
     @Override
     public void activateSpecialEffectOnHero() {
 

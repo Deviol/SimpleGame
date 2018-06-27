@@ -14,13 +14,14 @@ import game.spells.SpellFactory;
 public class DefaultLevel {
 
     private GameField gameField;
-
     private Hero hero;
-
     private HeroPosition heroPosition;
-
     private LevelStatus levelStatus;
 
+    /**
+     * Level class that everybody who wants to create his
+     * own custom level class must extend
+     */
     public DefaultLevel(Hero hero) {
         this.gameField = new GameField();
         this.hero = hero;
@@ -28,10 +29,18 @@ public class DefaultLevel {
         heroPosition = new HeroPosition();
     }
 
+    /**
+     * Moving hero on the field
+     * @param direction Direction where the hero should move
+     * @throws HeroStepOutOfGameFieldBoundsException If passing a direction leads to step off the field
+     * the current exception is thrown
+     * @throws ForbiddenDirectionException It is thrown in derived classes where someone may choose
+     * to forbid a direction which will be passed as argument
+     */
     public void movingTo(HeroDirection direction) throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
         boolean isMovingSafe = isMovingSafeAtDirection(direction);
-        if(isMovingSafe) {
+        if (isMovingSafe) {
             makeOldStepUsed();
             makeSafeMoveTo(direction);
         }
@@ -40,23 +49,38 @@ public class DefaultLevel {
         }
     }
 
+    /**
+     * Creates a spell and activates its effect
+     * @throws NoSpellFoundException Hero stepping on non spell cell and user typing the command for
+     * activating the spell will cause the current exception to be thrown
+     */
     public void activateSpell() throws NoSpellFoundException {
-        int heroRow = heroPosition.getRowIndex();
-        int heroCol = heroPosition.getColumnIndex();
-        String spellCode = gameField.getFieldElementCodeAt(heroRow, heroCol);
+        String spellCode = gameField.getFieldElementCodeAt(heroPosition.getRowIndex(),
+            heroPosition.getColumnIndex());
+        //spellParts must have syntax hero:spell:<name of spell>
+        //Always of length 3
         String[] spellParts = spellCode.split(":");
+
         if(spellParts.length == 3 && spellParts[1].equals("spell")) {
             CustomGameField customGameField = new CustomGameField(gameField);
             Spell currentSpell = SpellFactory.getAppropriateSpell(spellParts[2], customGameField, hero);
+
             currentSpell.activateSpecialEffectOnField();
-            currentSpell.activateSpecialEffectOnHero(); //fix
-            gameField.setNewFieldElementCode(heroRow, heroCol, "hero");
+            currentSpell.activateSpecialEffectOnHero();
+
+            gameField.setNewFieldElementCode(heroPosition.getRowIndex(),
+                heroPosition.getColumnIndex(), "hero");
         }
         else {
             throw new NoSpellFoundException(heroPosition);
         }
     }
 
+    /**
+     * Putting game defined element on the field
+     * @throws FailedGeneratingLevelException When one of the inner generating methods fails
+     * the current exception is thrown
+     */
     public void generateLevel() throws FailedGeneratingLevelException{
         try {
             generateElementAt(2, 3, "spell:InfernoSpell");
@@ -70,6 +94,14 @@ public class DefaultLevel {
 
     }
 
+    /**
+     * Generating a single game defined element on the field
+     * @param row Row coordinate
+     * @param col Column coordinate
+     * @param newCode The code of the game element(default is "empty")
+     * @throws FailedGeneratingElementException When bad coordinates or wrong code
+     * is passed as an argument the current exception is thrown.
+     */
     public void generateElementAt(int row, int col, String newCode)
         throws FailedGeneratingElementException {
         boolean isNewCodeValid = newCode.startsWith("spell:") ||
@@ -83,22 +115,38 @@ public class DefaultLevel {
         }
     }
 
+    /**
+     * Printing the game field to the standard output
+     */
     public void showGameFieldToUser() {
         gameField.printGameFieldForUserView();
     }
 
+    /**
+     * getter for the level status
+     */
     public LevelStatus getLevelStatus() {
         return levelStatus;
     }
 
+    /**
+     * setter for the level status
+     */
     protected void setLevelStatus(LevelStatus levelStatus) {
         this.levelStatus = levelStatus;
     }
 
+
+    /**
+     * Getter for hero's health
+     */
     protected int getHeroHealth() {
         return hero.getHealth();
     }
 
+    /**
+     * getter for hero's max health
+     */
     protected int getHeroMaxHealth() {
         return hero.getMaxHealth();
     }

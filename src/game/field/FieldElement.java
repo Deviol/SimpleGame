@@ -2,6 +2,9 @@ package game.field;
 
 import game.enums.FieldElementStatus;
 
+/**
+ * Represents a game field cell
+ */
 public class FieldElement {
 
     private FieldElementStatus status;
@@ -17,6 +20,7 @@ public class FieldElement {
         status = FieldElementStatus.HIDDEN;
         code = "empty";
     }
+
 
     public FieldElementStatus getStatus() {
         return status;

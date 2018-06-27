@@ -2,6 +2,9 @@ package game.field;
 
 import game.enums.FieldElementStatus;
 
+/**
+ * Represents a square game field from FieldElements
+ */
 public class GameField {
 
     private FieldElement[] field;
@@ -12,22 +15,52 @@ public class GameField {
         initializeField();
     }
 
+    /**
+     * Getting the code of an element
+     * @param row Row index
+     * @param col Column index
+     * @return Returns code of the cell with these coordinates
+     */
     public String getFieldElementCodeAt(int row, int col) {
         return field[MAX_LENGTH_OF_FIELD * row + col].getCode();
     }
 
+    /**
+     * Getting the status of an element
+     * @param row Row index
+     * @param col Column index
+     * @return Returns code of the cell with these coordinates
+     */
     public FieldElementStatus getFieldElementStatusAt(int row, int col) {
         return field[MAX_LENGTH_OF_FIELD * row + col].getStatus();
     }
 
-    public void setNewFieldElementCode(int row, int col, String newCode) {
-        field[MAX_LENGTH_OF_FIELD * row + col].setCode(newCode);
+    /**
+     * Setting the code of an element
+     * @param row Row index
+     * @param col Column index
+     * @param code new code
+     */
+    public void setNewFieldElementCode(int row, int col, String code) {
+        field[MAX_LENGTH_OF_FIELD * row + col].setCode(code);
     }
 
+    /**
+     * Setting the code of an element
+     * @param row Row index
+     * @param col Column index
+     * @param status new status
+     */
     public void setFieldElementStatusAt(int row, int col,  FieldElementStatus status) {
         field[MAX_LENGTH_OF_FIELD * row + col].setStatus(status);
     }
 
+    /**
+     * Validates the passed arguments
+     * @param row row index
+     * @param col column index
+     * @return boolean value indicating the validity of the arguments
+     */
     public boolean isMovingSafeAt(int row, int col) {
         boolean isColumnIndexInBounds = col > -1
                 && col < GameField.MAX_LENGTH_OF_FIELD;
@@ -37,6 +70,13 @@ public class GameField {
         return isColumnIndexInBounds && isRowIndexInBounds;
     }
 
+    /**
+     * Changing the status of set of elements to revealed
+     * @param fromRow Starting row index
+     * @param toRow Ending row index
+     * @param fromCol Starting column index
+     * @param toCol Ending column index
+     */
     public void revealSectorOfFieldElements(int fromRow, int toRow, int fromCol, int toCol) {
         for (int i = fromRow; i < toRow; i++) {
             for (int j = fromCol; j < toCol; j++) {
@@ -45,6 +85,10 @@ public class GameField {
         }
     }
 
+    /**
+     * Prints to the standard output user-friendly game field different from
+     * the actual one
+     */
     public void printGameFieldForUserView() {
         for (int i = 0; i < GameField.MAX_LENGTH_OF_FIELD; i++) {
             for (int j = 0; j < GameField.MAX_LENGTH_OF_FIELD; j++) {

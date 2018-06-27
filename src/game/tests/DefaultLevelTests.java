@@ -163,7 +163,7 @@ public class DefaultLevelTests {
         }
         for (int i = 0; i < numberOfLeftSteps; i++) {
             try {
-                defaultLevel.movingTo(HeroDirection.UP);
+                defaultLevel.movingTo(HeroDirection.LEFT);
             } catch(HeroStepOutOfGameFieldBoundsException |
                 ForbiddenDirectionException e) {
                 System.out.println("Out of the game field!");

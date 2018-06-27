@@ -15,6 +15,9 @@ public class LuckySpell implements Spell {
         this.hero = hero;
     }
 
+    /**
+     * Applying the spell effect on the field cells
+     */
     @Override
     public void activateSpecialEffectOnField() {
         try {
@@ -25,6 +28,9 @@ public class LuckySpell implements Spell {
 
     }
 
+    /**
+     * Applying the spell effect on hero's health
+     */
     @Override
     public void activateSpecialEffectOnHero() {
         hero.increaseHealthWith(50);

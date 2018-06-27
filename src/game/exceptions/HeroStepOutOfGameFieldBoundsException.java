@@ -13,6 +13,10 @@ public class HeroStepOutOfGameFieldBoundsException extends Exception{
         this.direction = direction;
     }
 
+    /**
+     * Converting the exception to type string
+     * @return Returns the message for the exception
+     */
     @Override
     public String toString() {
         return findReasonForBadDirection();

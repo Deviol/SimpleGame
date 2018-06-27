@@ -20,6 +20,10 @@ public class InvalidSectorException extends Exception {
         this.toColumnIndex = toColumnIndex;
     }
 
+    /**
+     * Converting the exception to type string
+     * @return Returns the message for the exception
+     */
     @Override
     public String toString() {
         String badIndexName = finReasonForException();
