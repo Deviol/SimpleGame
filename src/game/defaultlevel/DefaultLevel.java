@@ -2,7 +2,6 @@ package game.defaultlevel;
 
 import game.enums.FieldElementStatus;
 import game.enums.HeroDirection;
-import game.enums.IndexType;
 import game.enums.LevelStatus;
 import game.exceptions.*;
 import game.field.CustomGameField;
@@ -29,55 +28,15 @@ public class DefaultLevel {
         heroPosition = new HeroPosition();
     }
 
-    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.LEFT);
-        if(isMovingSafe) {
-            makeOldStepUsed();
-            moveHeroToTheNewPosition(HeroDirection.LEFT);
-        }
-        else {
-            int badIndex = heroPosition.getColumnIndex() - 1;
-            throw new HeroStepOutOfGameFieldBoundsException(badIndex, IndexType.COLUMN);
-        }
-    }
-
-    public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
+    public void movingTo(HeroDirection direction) throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
-        boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.RIGHT);
+        boolean isMovingSafe = isMovingSafeAtDirection(direction);
         if(isMovingSafe) {
             makeOldStepUsed();
-            moveHeroToTheNewPosition(HeroDirection.RIGHT);
+            makeSafeMoveTo(direction);
         }
         else {
-            int badIndex = heroPosition.getColumnIndex() + 1;
-            throw new HeroStepOutOfGameFieldBoundsException(badIndex, IndexType.COLUMN);
-        }
-    }
-
-    public void movingUp() throws HeroStepOutOfGameFieldBoundsException,
-        ForbiddenDirectionException {
-        boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.UP);
-        if(isMovingSafe) {
-            makeOldStepUsed();
-            moveHeroToTheNewPosition(HeroDirection.UP);
-        }
-        else {
-            int badIndex = heroPosition.getRowIndex() - 1;
-            throw new HeroStepOutOfGameFieldBoundsException(badIndex, IndexType.ROW);
-        }
-    }
-
-    public void movingDown() throws HeroStepOutOfGameFieldBoundsException,
-        ForbiddenDirectionException {
-        boolean isMovingSafe = isMovingSafeAtDirection(HeroDirection.DOWN);
-        if(isMovingSafe) {
-            makeOldStepUsed();
-            moveHeroToTheNewPosition(HeroDirection.DOWN);
-        }
-        else {
-            int badIndex = heroPosition.getRowIndex() + 1;
-            throw new HeroStepOutOfGameFieldBoundsException(badIndex, IndexType.ROW);
+            throw new HeroStepOutOfGameFieldBoundsException(heroPosition, direction);
         }
     }
 
@@ -146,6 +105,27 @@ public class DefaultLevel {
 
     protected void increaseHeroHealthBy(int health) {
         hero.increaseHealthWith(health);
+    }
+
+    private void makeSafeMoveTo(HeroDirection direction) {
+        switch(direction) {
+            case LEFT: {
+                moveHeroToTheNewPosition(HeroDirection.LEFT);
+                break;
+            }
+            case RIGHT: {
+                moveHeroToTheNewPosition(HeroDirection.RIGHT);
+                break;
+            }
+            case UP: {
+                moveHeroToTheNewPosition(HeroDirection.UP);
+                break;
+            }
+            default: {
+                moveHeroToTheNewPosition(HeroDirection.DOWN);
+                break;
+            }
+        }
     }
 
     private boolean isMovingSafeAtDirection(HeroDirection direction) {

@@ -23,7 +23,7 @@ public class EasyLevelTests {
     @Test(expected = ForbiddenDirectionException.class)
     public void testMovingUpShouldThrowException() throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
-        easyLevel.movingUp();
+        easyLevel.movingTo(HeroDirection.UP);
     }
 
 }

@@ -1,4 +1,5 @@
 package game.tests;
+import game.enums.HeroDirection;
 import game.exceptions.*;
 import game.hero.Hero;
 import game.defaultlevel.DefaultLevel;
@@ -21,7 +22,7 @@ public class DefaultLevelTests {
             ForbiddenDirectionException {
         int numberOfSteps = 8;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingLeft();
+            defaultLevel.movingTo(HeroDirection.LEFT);
         }
     }
     @Test(expected = Test.None.class)
@@ -29,7 +30,7 @@ public class DefaultLevelTests {
         ForbiddenDirectionException {
         int numberOfSteps = 7;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingLeft();
+            defaultLevel.movingTo(HeroDirection.LEFT);
         }
     }
 
@@ -38,7 +39,7 @@ public class DefaultLevelTests {
             ForbiddenDirectionException {
         int numberOfSteps = 8;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingRight();
+            defaultLevel.movingTo(HeroDirection.RIGHT);
         }
     }
 
@@ -47,7 +48,7 @@ public class DefaultLevelTests {
             ForbiddenDirectionException {
         int numberOfSteps = 7;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingRight();
+            defaultLevel.movingTo(HeroDirection.RIGHT);
         }
     }
 
@@ -56,7 +57,7 @@ public class DefaultLevelTests {
             ForbiddenDirectionException {
         int numberOfSteps = 8;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingUp();
+            defaultLevel.movingTo(HeroDirection.UP);
         }
     }
 
@@ -65,7 +66,7 @@ public class DefaultLevelTests {
             ForbiddenDirectionException {
         int numberOfSteps = 7;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingUp();
+            defaultLevel.movingTo(HeroDirection.UP);
         }
     }
 
@@ -74,7 +75,7 @@ public class DefaultLevelTests {
             ForbiddenDirectionException {
         int numberOfSteps = 8;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingDown();
+            defaultLevel.movingTo(HeroDirection.DOWN);
         }
     }
 
@@ -83,7 +84,7 @@ public class DefaultLevelTests {
             ForbiddenDirectionException {
         int numberOfSteps = 7;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingDown();
+            defaultLevel.movingTo(HeroDirection.DOWN);
         }
     }
 
@@ -154,7 +155,7 @@ public class DefaultLevelTests {
     private void makingSteps(int numberOfUpSteps, int numberOfLeftSteps) {
         for (int i = 0; i < numberOfUpSteps; i++) {
             try {
-                defaultLevel.movingUp();
+                defaultLevel.movingTo(HeroDirection.UP);
             } catch(HeroStepOutOfGameFieldBoundsException |
                 ForbiddenDirectionException e) {
                 System.out.println("Out of the game field!");
@@ -162,7 +163,7 @@ public class DefaultLevelTests {
         }
         for (int i = 0; i < numberOfLeftSteps; i++) {
             try {
-                defaultLevel.movingLeft();
+                defaultLevel.movingTo(HeroDirection.UP);
             } catch(HeroStepOutOfGameFieldBoundsException |
                 ForbiddenDirectionException e) {
                 System.out.println("Out of the game field!");

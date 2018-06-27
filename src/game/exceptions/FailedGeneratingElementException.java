@@ -16,7 +16,12 @@ public class FailedGeneratingElementException extends Exception {
         this.elementCode = elementCode;
     }
 
-    String findReasonForException() {
+    @Override
+    public String toString() {
+        return findReasonForException();
+    }
+
+    private String findReasonForException() {
         String result;
         boolean isRowIndexOutOfBounds =  rowIndex < 0 || rowIndex >= GameField.MAX_LENGTH_OF_FIELD;
         boolean isColumnIndexOutOfBounds = columnIndex < 0 || columnIndex >= GameField.MAX_LENGTH_OF_FIELD;
@@ -34,9 +39,4 @@ public class FailedGeneratingElementException extends Exception {
         return result;
     }
 
-    @Override
-    public String toString() {
-        String message = findReasonForException();
-        return message;
-    }
 }

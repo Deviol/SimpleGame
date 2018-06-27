@@ -30,44 +30,14 @@ public class HardLevel extends DefaultLevel {
         hero.decreaseHealthWith(healthCostForPlaying);
     }
 
-    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.LEFT);
+    public void movingTo(HeroDirection direction) throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
+        boolean isForbiddenDirection = isForbiddenDirection(direction);
         if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException(HeroDirection.LEFT);
+            throw new ForbiddenDirectionException(direction);
         }
         updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.LEFT);
-    }
-
-    public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.RIGHT);
-        if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException(HeroDirection.RIGHT);
-        }
-        updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.RIGHT);
-    }
-
-    public void movingUp() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.UP);
-        if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException(HeroDirection.UP);
-        }
-        updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.UP);
-    }
-
-    public void movingDown() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.DOWN);
-        if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException(HeroDirection.DOWN);
-        }
-        updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.DOWN);
+        makingMoveBasedOnAllowedSteps(direction);
     }
 
     public void activateSpell() throws NoSpellFoundException {
@@ -124,7 +94,7 @@ public class HardLevel extends DefaultLevel {
     private void makingMoveBasedOnAllowedSteps(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
         if(numberOfAllowedSteps > 0) {
-            movingTo(direction);
+            moving(direction);
             numberOfAllowedSteps--;
             super.increaseHeroHealthBy(additionalHealthForEachStep);
         }
@@ -133,23 +103,23 @@ public class HardLevel extends DefaultLevel {
         }
     }
 
-    private void movingTo(HeroDirection direction)
+    private void moving(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
         switch (direction) {
             case LEFT: {
-                super.movingLeft();
+                super.movingTo(HeroDirection.LEFT);
                 break;
             }
             case RIGHT: {
-                super.movingRight();
+                super.movingTo(HeroDirection.RIGHT);
                 break;
             }
             case UP: {
-                super.movingUp();
+                super.movingTo(HeroDirection.UP);
                 break;
             }
             default: {
-                super.movingDown();
+                super.movingTo(HeroDirection.DOWN);
                 break;
             }
         }

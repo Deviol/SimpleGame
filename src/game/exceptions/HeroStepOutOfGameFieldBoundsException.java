@@ -1,23 +1,48 @@
 package game.exceptions;
 
-import game.enums.IndexType;
+import game.enums.HeroDirection;
+import game.hero.HeroPosition;
 
 public class HeroStepOutOfGameFieldBoundsException extends Exception{
 
-    private int index;
+    private HeroPosition heroPosition;
+    private HeroDirection direction;
 
-    private IndexType indexType;
-
-    public HeroStepOutOfGameFieldBoundsException(int index, IndexType indexType) {
-        this.index = index;
-        this.indexType = indexType;
+    public HeroStepOutOfGameFieldBoundsException(HeroPosition heroPosition, HeroDirection direction) {
+        this.heroPosition = heroPosition;
+        this.direction = direction;
     }
 
     @Override
     public String toString() {
-        String type = String.valueOf(indexType).toLowerCase();
-        String indexMessage = String.valueOf(index);
-        String resultMessage = indexMessage + " is not a valid " + type + " index!";
-        return resultMessage;
+        return findReasonForBadDirection();
     }
+
+    private String findReasonForBadDirection() {
+        String message;
+        int badIndex;
+        switch (direction) {
+            case LEFT: {
+                badIndex = heroPosition.getColumnIndex() - 1;
+                message = "Failed moving left!\nIndex \"" + badIndex + "\" is not a valid column index!";
+                return message;
+            }
+            case RIGHT: {
+                badIndex = heroPosition.getColumnIndex() + 1;
+                message = "Failed moving right!\nIndex \"" + badIndex + "\" is not a valid column index!";
+                return message;
+            }
+            case UP: {
+                badIndex = heroPosition.getRowIndex() - 1;
+                message = "Failed moving up!\nIndex \"" + badIndex + "\" is not a valid row index!";
+                return message;
+            }
+            default: {
+                badIndex = heroPosition.getRowIndex() + 1;
+                message = "Failed moving down!\nIndex \"" + badIndex + "\" is not a valid row index!";
+                return message;
+            }
+        }
+    }
+
 }
