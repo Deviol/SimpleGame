@@ -7,7 +7,6 @@ import game.exceptions.InvalidSectorException;
 public class LuckySpell implements Spell {
 
     private CustomGameField gameField;
-
     private Hero hero;
 
     public LuckySpell(CustomGameField gameField, Hero hero) {
@@ -15,6 +14,9 @@ public class LuckySpell implements Spell {
         this.hero = hero;
     }
 
+    /**
+     * Applying the spell effect on the field cells
+     */
     @Override
     public void activateSpecialEffectOnField() {
         try {
@@ -25,6 +27,9 @@ public class LuckySpell implements Spell {
 
     }
 
+    /**
+     * Applying the spell effect on hero's health
+     */
     @Override
     public void activateSpecialEffectOnHero() {
         hero.increaseHealthWith(50);

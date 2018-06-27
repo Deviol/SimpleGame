@@ -3,7 +3,6 @@ package game.hero;
 public class Hero {
 
     private int health;
-
     private int maxHealth;
 
     public Hero(int maxHealth) {
@@ -11,11 +10,15 @@ public class Hero {
         health = maxHealth;
     }
 
+    /**
+     * Increases hero's current health
+     * @param health additional health
+     */
     public void increaseHealthWith(int health) {
-        if(health < 0) {
+        if (health < 0) {
             health = 0;
         }
-        if(this.health + health < maxHealth) {
+        if (this.health + health < maxHealth) {
             this.health += health;
         }
         else {
@@ -23,11 +26,15 @@ public class Hero {
         }
     }
 
+    /**
+     * Decreases hero's current health
+     * @param health health to take
+     */
     public void decreaseHealthWith(int health) {
-        if(health < 0) {
+        if (health < 0) {
             health = 0;
         }
-        if(this.health - health >= 0) {
+        if (this.health - health >= 0) {
             this.health -= health;
         }
         else {

@@ -1,7 +1,6 @@
 package game.tests;
 
 import game.enums.HeroDirection;
-import game.enums.IndexType;
 import game.exceptions.*;
 import game.hero.HeroPosition;
 import org.junit.Assert;
@@ -25,8 +24,9 @@ public class ExceptionsTests {
     @BeforeClass
     public static void initializeExceptions() {
         HeroPosition heroPosition = new HeroPosition();
-        noSpellFoundException = new NoSpellFoundException(heroPosition);
+        HeroDirection direction = HeroDirection.DOWN;
 
+        noSpellFoundException = new NoSpellFoundException(heroPosition);
 
         //initializing with random indices
         int fromRow = 15;
@@ -35,12 +35,11 @@ public class ExceptionsTests {
         int toCol = 0;
         invalidSectorException = new InvalidSectorException(fromRow, toRow, fromCol, toCol);
 
-        heroStepOutOfGameFieldBoundsException = new HeroStepOutOfGameFieldBoundsException(3, IndexType.COLUMN);
+        heroStepOutOfGameFieldBoundsException =
+            new HeroStepOutOfGameFieldBoundsException(heroPosition, direction);
 
-        //initializing with random hero direction
-        forbiddenDirectionException = new ForbiddenDirectionException(HeroDirection.DOWN);
+        forbiddenDirectionException = new ForbiddenDirectionException(direction);
 
-        failedGeneratingElementException = new FailedGeneratingElementException(3, 4, "spell:.");
 
         failedGeneratingLevelException = new FailedGeneratingLevelException();
     }
@@ -61,7 +60,7 @@ public class ExceptionsTests {
 
     @Test
     public void testHeroStepOutOfGameFieldBoundsException() {
-        String message = "3 is not a valid column index!";
+        String message = "Failed moving down!\nIndex \"8\" is not a valid row index!";
         String exceptionMessage = heroStepOutOfGameFieldBoundsException.toString();
 
         Assert.assertTrue(message.equals(exceptionMessage));
@@ -77,10 +76,11 @@ public class ExceptionsTests {
 
     @Test
     public void testFailedGeneratingElementExceptionCaseInvalidCode() {
+        failedGeneratingElementException = new FailedGeneratingElementException(3, 4, "spell:.");
         String message = "Element code \"spell:.\" is not a valid code";
         String exceptionMessage = failedGeneratingElementException.toString();
 
-        Assert.assertTrue(message.equals(exceptionMessage));
+        Assert.assertTrue(exceptionMessage.equals(message));
     }
 
     @Test

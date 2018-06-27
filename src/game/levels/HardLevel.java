@@ -9,13 +9,9 @@ import game.exceptions.*;
 public class HardLevel extends DefaultLevel {
 
     private HeroDirection firstForbiddenDirection;
-
     private HeroDirection secondForbiddenDirection;
-
     private int numberOfAllowedSteps;
-
     private int healthCostForPlaying;
-
     private int additionalHealthForEachStep;
 
     public HardLevel(Hero hero, HeroDirection firstForbiddenDirection,
@@ -30,50 +26,38 @@ public class HardLevel extends DefaultLevel {
         hero.decreaseHealthWith(healthCostForPlaying);
     }
 
-    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.LEFT);
-        if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException(HeroDirection.LEFT);
+    /**
+     * Moving hero on the field
+     * @param direction Direction where the hero should move
+     * @throws HeroStepOutOfGameFieldBoundsException If passing a direction leads to step off the field
+     * the current exception is thrown
+     * @throws ForbiddenDirectionException It is thrown when one or both of
+     * the forbidden directions are passed.
+     */
+    public void movingTo(HeroDirection direction) throws HeroStepOutOfGameFieldBoundsException,
+        ForbiddenDirectionException {
+        boolean isForbiddenDirection = isForbiddenDirection(direction);
+        if (isForbiddenDirection) {
+            throw new ForbiddenDirectionException(direction);
         }
         updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.LEFT);
+        makingMoveBasedOnAllowedSteps(direction);
     }
 
-    public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.RIGHT);
-        if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException(HeroDirection.RIGHT);
-        }
-        updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.RIGHT);
-    }
-
-    public void movingUp() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.UP);
-        if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException(HeroDirection.UP);
-        }
-        updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.UP);
-    }
-
-    public void movingDown() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        boolean isForbiddenDirection = isForbiddenDirection(HeroDirection.DOWN);
-        if(isForbiddenDirection) {
-            throw new ForbiddenDirectionException(HeroDirection.DOWN);
-        }
-        updateAdditionalHealthForEachStepIfNecessary();
-        makingMoveBasedOnAllowedSteps(HeroDirection.DOWN);
-    }
-
+    /**
+     * Creates a spell and activates its effect
+     * @throws NoSpellFoundException Hero stepping on non spell cell and user typing the command for
+     * activating the spell will cause the current exception to be thrown
+     */
     public void activateSpell() throws NoSpellFoundException {
         super.activateSpell();
     }
 
+    /**
+     * Putting game defined element on the field
+     * @throws FailedGeneratingLevelException When one of the inner generating methods fails
+     * the current exception is thrown
+     */
     public void generateLevel() throws FailedGeneratingLevelException {
         super.generateLevel();
         try {
@@ -91,10 +75,16 @@ public class HardLevel extends DefaultLevel {
         }
     }
 
+    /**
+     * getter for the level status
+     */
     public LevelStatus getLevelStatus() {
         return super.getLevelStatus();
     }
 
+    /**
+     * Printing the game field to the standard output
+     */
     public void showGameFieldToUser() {
         super.showGameFieldToUser();
     }
@@ -111,11 +101,11 @@ public class HardLevel extends DefaultLevel {
         boolean isHeroOnLessThanHalfHealth = heroHealth < heroMaxHealth / 2;
         boolean isHeroOnLessThanQuarterHealth = heroHealth < heroMaxHealth / 4;
 
-        if(isHeroOnLessThanQuarterHealth) {
+        if (isHeroOnLessThanQuarterHealth) {
             additionalHealthForEachStep = 2;
         }
 
-        if(isHeroOnLessThanHalfHealth) {
+        if (isHeroOnLessThanHalfHealth) {
             additionalHealthForEachStep = 1;
         }
 
@@ -123,8 +113,8 @@ public class HardLevel extends DefaultLevel {
 
     private void makingMoveBasedOnAllowedSteps(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
-        if(numberOfAllowedSteps > 0) {
-            movingTo(direction);
+        if (numberOfAllowedSteps > 0) {
+            moving(direction);
             numberOfAllowedSteps--;
             super.increaseHeroHealthBy(additionalHealthForEachStep);
         }
@@ -133,23 +123,23 @@ public class HardLevel extends DefaultLevel {
         }
     }
 
-    private void movingTo(HeroDirection direction)
+    private void moving(HeroDirection direction)
             throws HeroStepOutOfGameFieldBoundsException, ForbiddenDirectionException {
         switch (direction) {
             case LEFT: {
-                super.movingLeft();
+                super.movingTo(HeroDirection.LEFT);
                 break;
             }
             case RIGHT: {
-                super.movingRight();
+                super.movingTo(HeroDirection.RIGHT);
                 break;
             }
             case UP: {
-                super.movingUp();
+                super.movingTo(HeroDirection.UP);
                 break;
             }
             default: {
-                super.movingDown();
+                super.movingTo(HeroDirection.DOWN);
                 break;
             }
         }

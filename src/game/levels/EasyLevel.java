@@ -14,50 +14,44 @@ public class EasyLevel extends DefaultLevel {
         this.forbiddenDirection = forbiddenDirection;
     }
 
-    public void movingLeft() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        if(forbiddenDirection == HeroDirection.LEFT) {
-            throw new ForbiddenDirectionException(HeroDirection.LEFT);
-        }
-
-        super.movingLeft();
-    }
-
-    public void movingRight() throws HeroStepOutOfGameFieldBoundsException,
+    /**
+     * Moving hero on the field
+     * @param direction Direction where the hero should move
+     * @throws HeroStepOutOfGameFieldBoundsException If passing a direction leads to step off the field
+     * the current exception is thrown
+     * @throws ForbiddenDirectionException It is thrown when the
+     * the forbidden directions is passed.
+     */
+    public void movingTo(HeroDirection direction) throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
-        if(forbiddenDirection == HeroDirection.RIGHT) {
-            throw new ForbiddenDirectionException(HeroDirection.RIGHT);
+        if(forbiddenDirection == direction) {
+            throw new ForbiddenDirectionException(direction);
         }
 
-        super.movingRight();
+        super.movingTo(direction);
     }
 
-    public void movingUp() throws HeroStepOutOfGameFieldBoundsException,
-        ForbiddenDirectionException {
-        if(forbiddenDirection == HeroDirection.UP) {
-            throw new ForbiddenDirectionException(HeroDirection.UP);
-        }
-
-        super.movingUp();
-    }
-
-    public void movingDown() throws HeroStepOutOfGameFieldBoundsException,
-        ForbiddenDirectionException {
-        if(forbiddenDirection == HeroDirection.DOWN) {
-            throw new ForbiddenDirectionException(HeroDirection.DOWN);
-        }
-
-        super.movingDown();
-    }
-
+    /**
+     * Creates a spell and activates its effect
+     * @throws NoSpellFoundException Hero stepping on non spell cell and user typing the command for
+     * activating the spell will cause the current exception to be thrown
+     */
     public void activateSpell() throws NoSpellFoundException {
         super.activateSpell();
     }
 
+    /**
+     * Printing the game field to the standard output
+     */
     public void showGameFieldToUser() {
         super.showGameFieldToUser();
     }
 
+    /**
+     * Putting game defined element on the field
+     * @throws FailedGeneratingLevelException When one of the inner generating methods fails
+     * the current exception is thrown
+     */
     public void generateLevel() throws FailedGeneratingLevelException {
         super.generateLevel();
         try {

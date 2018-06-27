@@ -10,6 +10,10 @@ public class NoSpellFoundException extends Exception{
         this.heroPosition = heroPosition;
     }
 
+    /**
+     * Converting the exception to type string
+     * @return Returns the message for the exception
+     */
     @Override
     public String toString() {
         String heroRowMessage = String.valueOf(heroPosition.getRowIndex());

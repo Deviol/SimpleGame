@@ -10,12 +10,12 @@ import org.junit.Test;
 public class HeroTests {
 
     private Hero hero;
-
     private HeroPosition heroPosition;
+    private int randomMaxHealth;
 
     @Before
     public void initializeHero() {
-        int randomMaxHealth = 50;
+        randomMaxHealth = 50;
         hero = new Hero(randomMaxHealth);
         heroPosition = new HeroPosition();
     }
@@ -24,12 +24,12 @@ public class HeroTests {
     public void testIncreaseHealthWithCaseSumOverTheLimitShouldAssignMaxHealth() {
         hero.increaseHealthWith(4);
 
-        Assert.assertTrue(hero.getHealth() == 50);
+        Assert.assertTrue(hero.getHealth() == randomMaxHealth);
     }
 
     @Test
     public void testDecreaseHealthWithCaseSumLessThanZeroShouldAssignZero() {
-        hero.decreaseHealthWith(51);
+        hero.decreaseHealthWith(randomMaxHealth + 1);
         Assert.assertTrue(hero.getHealth() == 0);
     }
 

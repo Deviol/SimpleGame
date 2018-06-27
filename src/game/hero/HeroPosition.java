@@ -2,10 +2,12 @@ package game.hero;
 
 import game.enums.HeroDirection;
 
+/**
+ * Represents the current hero position on the game field
+ */
 public class HeroPosition {
 
     private int rowIndex;
-
     private int columnIndex;
 
     public final static int DEFAULT_INDEX_OF_HERO_POSITION = 7;
@@ -23,6 +25,9 @@ public class HeroPosition {
         return columnIndex;
     }
 
+    /**
+     * Changes one of the indices based on the passed direction
+     */
     public void updateHeroPosition(HeroDirection direction) {
         switch (direction) {
             case UP: {

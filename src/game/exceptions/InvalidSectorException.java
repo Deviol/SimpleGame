@@ -20,6 +20,10 @@ public class InvalidSectorException extends Exception {
         this.toColumnIndex = toColumnIndex;
     }
 
+    /**
+     * Converting the exception to type string
+     * @return Returns the message for the exception
+     */
     @Override
     public String toString() {
         String badIndexName = finReasonForException();
@@ -38,13 +42,13 @@ public class InvalidSectorException extends Exception {
                 toColumnIndex < 0 || GameField.MAX_LENGTH_OF_FIELD <= toColumnIndex;
 
         String result;
-        if(isFromRowIndexInvalid) {
+        if (isFromRowIndexInvalid) {
             result = "fromRow: \"" + fromRowIndex + "\" ";
         }
-        else if(isToRowIndexInvalid) {
+        else if (isToRowIndexInvalid) {
             result = "toRow: \"" + toRowIndex + "\" ";
         }
-        else if(isFromColumnIndexInvalid) {
+        else if (isFromColumnIndexInvalid) {
             result = "fromCol: \"" + fromColumnIndex + "\" ";
         }
         else {
