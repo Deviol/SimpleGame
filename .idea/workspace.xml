@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="" />
-=======
     <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java" afterPath="$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/tests/HardLevelTests.java" afterPath="$PROJECT_DIR$/src/game/tests/HardLevelTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/tests/HeroTests.java" afterPath="$PROJECT_DIR$/src/game/tests/HeroTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
->>>>>>> custom-game
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +19,7 @@
     <SUITE FILE_PATH="coverage/SimpleGame$game_tests_in_SimpleGame.coverage" NAME="game.tests in SimpleGame Coverage Results" MODIFIED="1530110614355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>game.tests.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SimpleGame$All_in_SimpleGame.coverage" NAME="All in SimpleGame Coverage Results" MODIFIED="1530110709142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SimpleGame$All_in_SimpleGame.coverage" NAME="All in SimpleGame Coverage Results" MODIFIED="1530117667555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,25 +27,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-      <file leaf-file-name="EasyLevel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/levels/EasyLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#activateSpell#0;class#EasyLevel#0" expanded="false" />
-                <element signature="method#generateLevel#0;class#EasyLevel#0" expanded="false" />
-              </folding>
-=======
       <file leaf-file-name="LuckySpell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/spells/LuckySpell.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding />
->>>>>>> custom-game
             </state>
           </provider>
         </entry>
@@ -59,13 +40,8 @@
       <file leaf-file-name="SpellFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/spells/SpellFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="459">
-              <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-=======
             <state relative-caret-position="493">
               <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
->>>>>>> custom-game
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,51 +49,21 @@
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="DefaultLevel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/defaultlevel/DefaultLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="200" column="1" lean-forward="false" selection-start-line="200" selection-start-column="1" selection-end-line="200" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#DefaultLevel#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#movingLeft#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#movingRight#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#movingUp#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#movingDown#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#activateSpell#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#generateLevel#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#generateElementAt#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#isMovingSafeAtDirection#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#makeOldStepUsed#0;class#DefaultLevel#0" expanded="false" />
-                <element signature="method#moveHeroToTheNewPosition#0;class#DefaultLevel#0" expanded="false" />
-              </folding>
-=======
       <file leaf-file-name="Spell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/spells/Spell.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
->>>>>>> custom-game
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
-=======
-      <file leaf-file-name="DefaultLevelTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultLevelTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
+            <state relative-caret-position="1190">
               <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
->>>>>>> custom-game
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,19 +71,11 @@
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="HardLevelTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/tests/HardLevelTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-=======
       <file leaf-file-name="HardLevel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/levels/HardLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
+            <state relative-caret-position="1887">
               <caret line="115" column="11" lean-forward="false" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
->>>>>>> custom-game
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EasyLevelTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EasyLevelTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/tests/EasyLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="316">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +98,7 @@
       <file leaf-file-name="ExceptionsTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/tests/ExceptionsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1129">
+            <state relative-caret-position="153">
               <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -172,17 +110,11 @@
       <file leaf-file-name="GameFieldTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/tests/GameFieldTests.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-=======
             <state relative-caret-position="680">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+              <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> custom-game
             </state>
           </provider>
         </entry>
@@ -190,17 +122,11 @@
       <file leaf-file-name="HardLevelTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/tests/HardLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="102">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding />
-=======
-            <state relative-caret-position="350">
+            <state relative-caret-position="1020">
               <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> custom-game
             </state>
           </provider>
         </entry>
@@ -208,17 +134,11 @@
       <file leaf-file-name="HeroTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/tests/HeroTests.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="391">
-              <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-              <folding />
-=======
             <state relative-caret-position="663">
-              <caret line="39" column="80" lean-forward="true" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
+              <caret line="39" column="80" lean-forward="false" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> custom-game
             </state>
           </provider>
         </entry>
@@ -462,33 +382,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.EasyLevelTests">
-    <configuration default="false" name="DefaultLevelTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="game.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SimpleGame" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="game.tests" />
-      <option name="MAIN_CLASS_NAME" value="game.tests.DefaultLevelTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in SimpleGame">
     <configuration default="false" name="HardLevelTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -581,6 +475,27 @@
       <option name="MAIN_CLASS_NAME" value="game.tests.EasyLevelTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in SimpleGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SimpleGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -798,19 +713,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HardLevelTests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HeroTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameFieldTests" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EasyLevelTests" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.HardLevelTests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HeroTests" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GameFieldTests" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EasyLevelTests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in SimpleGame" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EasyLevelTests" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GameFieldTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HeroTests" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HardLevelTests" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultLevelTests" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in SimpleGame" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EasyLevelTests" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GameFieldTests" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HeroTests" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HardLevelTests" />
       </list>
     </recent_temporary>
   </component>
@@ -828,8 +743,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DefaultLevelTests - 2018.06.27 at 19h 09m 40s.xml">
-      <configuration name="DefaultLevelTests" configurationId="JUnit" />
+    <history-entry file="All_in_SimpleGame - 2018.06.27 at 19h 41m 09s.xml">
+      <configuration name="All in SimpleGame" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DefaultLevelTests_testMovingToShouldThrowException - 2018.06.27 at 19h 05m 16s.xml">
       <configuration name="DefaultLevelTests.testMovingToShouldThrowException" configurationId="JUnit" />
@@ -866,30 +781,20 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-=======
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> custom-game
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
->>>>>>> custom-game
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20814815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21037038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> custom-game
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -900,16 +805,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-<<<<<<< HEAD
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> custom-game
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -926,12 +823,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/game/levels/EasyLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-=======
     <entry file="file://$PROJECT_DIR$/src/game/spells/LuckySpell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -944,60 +835,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
->>>>>>> custom-game
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#activateSpell#0;class#EasyLevel#0" expanded="false" />
-            <element signature="method#generateLevel#0;class#EasyLevel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/game/spells/Spell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/levels/HardLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+        <state relative-caret-position="1887">
+          <caret line="115" column="11" lean-forward="false" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#movingLeft#0;class#HardLevel#0" expanded="false" />
-            <element signature="method#movingRight#0;class#HardLevel#0" expanded="false" />
-            <element signature="method#movingUp#0;class#HardLevel#0" expanded="false" />
-            <element signature="method#movingDown#0;class#HardLevel#0" expanded="false" />
-            <element signature="method#activateSpell#0;class#HardLevel#0" expanded="false" />
-            <element signature="method#generateLevel#0;class#HardLevel#0" expanded="false" />
-            <element signature="method#isForbiddenDirection#0;class#HardLevel#0" expanded="false" />
-            <element signature="method#updateAdditionalHealthForEachStepIfNecessary#0;class#HardLevel#0" expanded="false" />
-            <element signature="method#movingTo#0;class#HardLevel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/defaultlevel/DefaultLevel.java">
+    <entry file="file://$PROJECT_DIR$/src/game/tests/EasyLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#DefaultLevel#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#movingLeft#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#movingRight#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#movingUp#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#movingDown#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#activateSpell#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#generateLevel#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#generateElementAt#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#isMovingSafeAtDirection#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#makeOldStepUsed#0;class#DefaultLevel#0" expanded="false" />
-            <element signature="method#moveHeroToTheNewPosition#0;class#DefaultLevel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/tests/ExceptionsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/tests/GameFieldTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/tests/HardLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="1020">
+          <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/tests/HeroTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="80" lean-forward="true" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1006,59 +921,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/spells/LuckySpell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/field/CustomGameField.java">
+    <entry file="file://$PROJECT_DIR$/src/game/spells/SpellFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/field/FieldElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="493">
+          <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
           <folding>
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/field/GameField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/hero/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/hero/HeroPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/enums/IndexType.java">
-=======
     <entry file="file://$PROJECT_DIR$/src/game/spells/Spell.java">
->>>>>>> custom-game
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
@@ -1294,13 +1173,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/spells/InfernoSpell.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="255">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-=======
         <state relative-caret-position="578">
           <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
->>>>>>> custom-game
           <folding />
         </state>
       </provider>
@@ -1325,58 +1199,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/spells/Spell.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-=======
         <state relative-caret-position="51">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
->>>>>>> custom-game
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/levels/HardLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
-=======
-        <state relative-caret-position="690">
+        <state relative-caret-position="1887">
           <caret line="115" column="11" lean-forward="false" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
->>>>>>> custom-game
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="391">
-          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-=======
-        <state relative-caret-position="-85">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
->>>>>>> custom-game
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/tests/ExceptionsTests.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-=======
-        <state relative-caret-position="-1129">
+        <state relative-caret-position="153">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
->>>>>>> custom-game
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1385,13 +1227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/tests/HardLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-=======
-        <state relative-caret-position="350">
+        <state relative-caret-position="1020">
           <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
->>>>>>> custom-game
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1400,13 +1237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/tests/HeroTests.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="459">
-          <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-=======
         <state relative-caret-position="663">
-          <caret line="39" column="80" lean-forward="true" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
->>>>>>> custom-game
+          <caret line="39" column="80" lean-forward="false" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1415,12 +1247,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/tests/GameFieldTests.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="537">
-          <caret line="200" column="1" lean-forward="false" selection-start-line="200" selection-start-column="1" selection-end-line="200" selection-end-column="1" />
-=======
         <state relative-caret-position="680">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1429,19 +1257,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/tests/EasyLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
->>>>>>> custom-game
+        <state relative-caret-position="316">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+        <state relative-caret-position="1190">
+          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
