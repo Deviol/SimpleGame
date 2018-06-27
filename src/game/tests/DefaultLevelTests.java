@@ -6,93 +6,43 @@ import game.defaultlevel.DefaultLevel;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Random;
+
 public class DefaultLevelTests {
 
     private DefaultLevel defaultLevel;
     private HeroDirection heroDirection;
+    private boolean isHeroOnSpell;
 
     @Before
     public void initializeDefaultLevel() {
         int randomMaxHealth = 50;
         Hero hero = new Hero(randomMaxHealth);
         defaultLevel = new DefaultLevel(hero);
+        heroDirection = generateRandomDirection();
+        isHeroOnSpell = true;
     }
 
     @Test(expected = HeroStepOutOfGameFieldBoundsException.class)
-    public void testMovingLeftShouldThrowException() throws HeroStepOutOfGameFieldBoundsException,
+    public void testMovingToShouldThrowException() throws HeroStepOutOfGameFieldBoundsException,
             ForbiddenDirectionException {
         int numberOfSteps = 8;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingTo(HeroDirection.LEFT);
+            defaultLevel.movingTo(heroDirection);
         }
     }
     @Test(expected = Test.None.class)
-    public void testMovingLeftShouldMakeLegalSteps() throws HeroStepOutOfGameFieldBoundsException,
+    public void testMovingToShouldMakeLegalSteps() throws HeroStepOutOfGameFieldBoundsException,
         ForbiddenDirectionException {
         int numberOfSteps = 7;
         for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingTo(HeroDirection.LEFT);
-        }
-    }
-
-    @Test(expected = HeroStepOutOfGameFieldBoundsException.class)
-    public void testMovingRightShouldThrowException() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        int numberOfSteps = 8;
-        for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingTo(HeroDirection.RIGHT);
-        }
-    }
-
-    @Test(expected = Test.None.class)
-    public void testMovingRightShouldMakeLegalSteps() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        int numberOfSteps = 7;
-        for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingTo(HeroDirection.RIGHT);
-        }
-    }
-
-    @Test(expected = HeroStepOutOfGameFieldBoundsException.class)
-    public void testMovingUpShouldThrowException() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        int numberOfSteps = 8;
-        for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingTo(HeroDirection.UP);
-        }
-    }
-
-    @Test(expected = Test.None.class)
-    public void testMovingUpShouldMakeLegalSteps() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        int numberOfSteps = 7;
-        for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingTo(HeroDirection.UP);
-        }
-    }
-
-    @Test(expected = HeroStepOutOfGameFieldBoundsException.class)
-    public void testMovingDownShouldThrowException() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        int numberOfSteps = 8;
-        for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingTo(HeroDirection.DOWN);
-        }
-    }
-
-    @Test(expected = Test.None.class)
-    public void testMovingDownShouldMakeLegalSteps() throws HeroStepOutOfGameFieldBoundsException,
-            ForbiddenDirectionException {
-        int numberOfSteps = 7;
-        for (int step = 0; step < numberOfSteps; step++) {
-            defaultLevel.movingTo(HeroDirection.DOWN);
+            defaultLevel.movingTo(heroDirection);
         }
     }
 
     @Test(expected = Test.None.class)
     public void testActivateSpellShouldCreateSpell() throws NoSpellFoundException,
         FailedGeneratingLevelException {
-        boolean isHeroOnSpell = true;
         defaultLevel.generateLevel();
         setHeroPositionOnTestingPosition(isHeroOnSpell);
         defaultLevel.activateSpell();
@@ -101,7 +51,7 @@ public class DefaultLevelTests {
     @Test(expected = NoSpellFoundException.class)
     public void testActivateSpellShouldThrowException() throws NoSpellFoundException,
         FailedGeneratingLevelException {
-        boolean isHeroOnSpell = false;
+        isHeroOnSpell = false;
         defaultLevel.generateLevel();
         setHeroPositionOnTestingPosition(isHeroOnSpell);
         defaultLevel.activateSpell();
@@ -121,14 +71,6 @@ public class DefaultLevelTests {
         int randomRow = 3;
         int randomCol = 14;
         defaultLevel.generateElementAt(randomRow, randomCol, "spell.InfernoSpell");
-    }
-
-    @Test(expected = FailedGeneratingElementException.class)
-    public void testGenerateElementAtShouldThrowExceptionCaseInvalidElementCodeV2()
-            throws FailedGeneratingElementException {
-        int randomRow = 3;
-        int randomCol = 14;
-        defaultLevel.generateElementAt(randomRow, randomCol, "sspell:InfernoSpell");
     }
 
     @Test
@@ -170,5 +112,12 @@ public class DefaultLevelTests {
                 System.out.println("Out of the game field!");
             }
         }
+    }
+    private HeroDirection generateRandomDirection() {
+        int length = HeroDirection.values().length;
+        Random rand = new Random();
+        int randomIndex = rand.nextInt(length);
+        HeroDirection[] directions = HeroDirection.values();
+        return  directions[randomIndex];
     }
 }
