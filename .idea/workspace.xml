@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4956533d-cdfb-4c28-8eff-cae7d718c210" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/tests/EasyLevelTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/tests/ExceptionsTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/tests/GameFieldTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/tests/HardLevelTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/tests/HeroTests.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java" afterPath="$PROJECT_DIR$/tests/DefaultLevelTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/tests/EasyLevelTests.java" afterPath="$PROJECT_DIR$/tests/EasyLevelTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/tests/ExceptionsTests.java" afterPath="$PROJECT_DIR$/tests/ExceptionsTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/tests/GameFieldTests.java" afterPath="$PROJECT_DIR$/tests/GameFieldTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/tests/HardLevelTests.java" afterPath="$PROJECT_DIR$/tests/HardLevelTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/tests/HeroTests.java" afterPath="$PROJECT_DIR$/tests/HeroTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +71,7 @@
         </entry>
       </file>
       <file leaf-file-name="DefaultLevelTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java">
+        <entry file="file://$PROJECT_DIR$/tests/DefaultLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1190">
               <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
@@ -84,7 +95,7 @@
         </entry>
       </file>
       <file leaf-file-name="EasyLevelTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/tests/EasyLevelTests.java">
+        <entry file="file://$PROJECT_DIR$/tests/EasyLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="316">
               <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
@@ -96,7 +107,7 @@
         </entry>
       </file>
       <file leaf-file-name="ExceptionsTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/tests/ExceptionsTests.java">
+        <entry file="file://$PROJECT_DIR$/tests/ExceptionsTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -108,7 +119,7 @@
         </entry>
       </file>
       <file leaf-file-name="GameFieldTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/tests/GameFieldTests.java">
+        <entry file="file://$PROJECT_DIR$/tests/GameFieldTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
               <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
@@ -120,7 +131,7 @@
         </entry>
       </file>
       <file leaf-file-name="HardLevelTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/tests/HardLevelTests.java">
+        <entry file="file://$PROJECT_DIR$/tests/HardLevelTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1020">
               <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
@@ -132,7 +143,7 @@
         </entry>
       </file>
       <file leaf-file-name="HeroTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/tests/HeroTests.java">
+        <entry file="file://$PROJECT_DIR$/tests/HeroTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
               <caret line="39" column="80" lean-forward="false" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
@@ -276,14 +287,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -381,6 +384,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Denis\Desktop\projects\java projects\SimpleGame" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.All in SimpleGame">
     <configuration default="false" name="HardLevelTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -776,7 +784,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="735" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -787,14 +795,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21037038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21037038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -849,7 +857,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/DefaultLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
@@ -869,7 +877,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/EasyLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/EasyLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -879,7 +887,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/ExceptionsTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/ExceptionsTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -889,7 +897,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/GameFieldTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/GameFieldTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
@@ -899,7 +907,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/HardLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/HardLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
@@ -909,7 +917,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/HeroTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/HeroTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="80" lean-forward="true" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
@@ -945,7 +953,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/DefaultLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
@@ -965,7 +973,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/EasyLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/EasyLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
@@ -975,7 +983,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/ExceptionsTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/ExceptionsTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
@@ -985,7 +993,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/GameFieldTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/GameFieldTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
@@ -995,7 +1003,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/HardLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/HardLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="59" column="45" lean-forward="false" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
@@ -1005,7 +1013,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/HeroTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/HeroTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
@@ -1215,7 +1223,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/ExceptionsTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/ExceptionsTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -1225,7 +1233,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/HardLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/HardLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
@@ -1235,7 +1243,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/HeroTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/HeroTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="80" lean-forward="false" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
@@ -1245,7 +1253,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/GameFieldTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/GameFieldTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
@@ -1255,7 +1263,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/EasyLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/EasyLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
@@ -1265,7 +1273,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tests/DefaultLevelTests.java">
+    <entry file="file://$PROJECT_DIR$/tests/DefaultLevelTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
