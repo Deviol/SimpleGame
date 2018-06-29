@@ -7,11 +7,12 @@ public class FailedGeneratingElementException extends Exception {
     private int rowIndex;
     private int columnIndex;
     private String elementCode;
-
+    private String endMessage;
     public FailedGeneratingElementException(int rowIndex, int columnIndex, String elementCode) {
         this.rowIndex = rowIndex;
         this.columnIndex = columnIndex;
         this.elementCode = elementCode;
+        endMessage = "wrong index";
     }
 
     /**
@@ -36,9 +37,13 @@ public class FailedGeneratingElementException extends Exception {
         }
         else {
             result = "Element code \"" + elementCode + "\" is not a valid code";
+            endMessage = "wrong element code";
         }
 
         return result;
     }
 
+    public String getEndMessage() {
+        return endMessage;
+    }
 }

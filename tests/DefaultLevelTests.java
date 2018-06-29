@@ -1,4 +1,3 @@
-package game.tests;
 import game.enums.HeroDirection;
 import game.exceptions.*;
 import game.hero.Hero;

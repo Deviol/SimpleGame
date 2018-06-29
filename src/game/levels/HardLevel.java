@@ -71,7 +71,7 @@ public class HardLevel extends DefaultLevel {
         }
         catch(FailedGeneratingElementException e) {
             System.out.println(e);
-            throw new FailedGeneratingLevelException();
+            throw new FailedGeneratingLevelException(e);
         }
     }
 

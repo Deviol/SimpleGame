@@ -89,7 +89,7 @@ public class DefaultLevel {
             generateElementAt(13, 13, "exit");
         } catch (FailedGeneratingElementException e) {
             System.out.println(e);
-            throw new FailedGeneratingLevelException();
+            throw new FailedGeneratingLevelException(e);
         }
 
     }

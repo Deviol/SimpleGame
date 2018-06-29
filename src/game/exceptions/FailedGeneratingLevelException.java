@@ -2,8 +2,11 @@ package game.exceptions;
 
 public class FailedGeneratingLevelException extends Exception{
 
+    private FailedGeneratingElementException failedGeneratingElementException;
 
-    public FailedGeneratingLevelException() {}
+    public FailedGeneratingLevelException(FailedGeneratingElementException failedGeneratingElementException) {
+        this.failedGeneratingElementException = failedGeneratingElementException;
+    }
 
     /**
      * Converting the exception to type string
@@ -11,7 +14,7 @@ public class FailedGeneratingLevelException extends Exception{
      */
     @Override
     public String toString() {
-        String message = "Failed to generate level because of level's Author error!";
-        return message;
+        return "Failed to generate level due to "
+            + failedGeneratingElementException.getEndMessage() + " in the inner generating methods!";
     }
 }

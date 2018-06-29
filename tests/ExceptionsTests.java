@@ -1,5 +1,3 @@
-package game.tests;
-
 import game.enums.HeroDirection;
 import game.exceptions.*;
 import game.hero.HeroPosition;
@@ -10,15 +8,10 @@ import org.junit.Test;
 public class ExceptionsTests {
 
     private static NoSpellFoundException noSpellFoundException;
-
     private static InvalidSectorException invalidSectorException;
-
     private static HeroStepOutOfGameFieldBoundsException heroStepOutOfGameFieldBoundsException;
-
     private static ForbiddenDirectionException forbiddenDirectionException;
-
     private static FailedGeneratingLevelException failedGeneratingLevelException;
-
     private static FailedGeneratingElementException failedGeneratingElementException;
 
     @BeforeClass
@@ -40,8 +33,10 @@ public class ExceptionsTests {
 
         forbiddenDirectionException = new ForbiddenDirectionException(direction);
 
+        failedGeneratingElementException = new FailedGeneratingElementException(3, 4, "spell:");
 
-        failedGeneratingLevelException = new FailedGeneratingLevelException();
+        failedGeneratingLevelException =
+            new FailedGeneratingLevelException(failedGeneratingElementException);
     }
 
     @Test
@@ -95,9 +90,8 @@ public class ExceptionsTests {
 
     @Test
     public void testFailedGeneratingLevelException() {
-        String message = "Failed to generate level because of level's Author error!";
+        String message = "Failed to generate level due to wrong index in the inner generating methods!";
         String exceptionMessage = failedGeneratingLevelException.toString();
-
         Assert.assertTrue(message.equals(exceptionMessage));
     }
 }

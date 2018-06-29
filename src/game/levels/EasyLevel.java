@@ -61,7 +61,7 @@ public class EasyLevel extends DefaultLevel {
             super.generateElementAt(7, 11, "exit");
         } catch(FailedGeneratingElementException e) {
             System.out.println(e);
-            throw new FailedGeneratingLevelException();
+            throw new FailedGeneratingLevelException(e);
         }
     }
 }
