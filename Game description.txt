@@ -21,3 +21,5 @@ hero:spell:<spell name> hero is on spell with name <spell name>
 
 EveryBody who wants to create a level extends DefaultLevel class.
 EveryBody who wants to create a spell extends Spell class.
+------------------------
+GAME NOT FINISHED.
